@@ -1,0 +1,30 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"name": "MXGame",
+			"path": "/Users/joeld/Google Drive/Kids_Make_Video_Games/MXGame/"
+		},
+		{
+			"follow_symlinks": true,
+			"name": "Flixel",
+			"path": "/Users/joeld/Toolkits/haxelibrepo/flixel/4,0,1/"
+		},
+		{
+			"follow_symlinks": true,
+			"name": "Flixel Addons",
+			"path": "/Users/joeld/Toolkits/haxelibrepo/flixel-addons/2,0,0/"
+		},
+		{
+			"follow_symlinks": true,
+			"name": "Haxe",
+			"path": "/usr/local/lib/haxe/std"
+		},
+		{
+			"follow_symlinks": true,
+			"name": "SpriterHaxeEngine",
+			"path": "/Users/joeld/Library/Developer/haxelib/SpriterHaxeEngine/2,0,0"
+		}
+	]
+}
