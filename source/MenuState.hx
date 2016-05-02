@@ -70,7 +70,7 @@ class MenuState extends FlxState
 
 		if (FlxG.keys.justPressed.ENTER ) {
 			switch(_selected) {
-				case 0: FlxG.switchState( new PlayState() );
+				case 0: FlxG.switchState( new CharSelectState() );
 				case 1: System.exit(0);
 			}
 		}
