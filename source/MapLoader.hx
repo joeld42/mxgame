@@ -13,13 +13,15 @@ class MapLoader
 
 	public static function loadLevel(state:PlayState, level:String) {
 		var tiledMap = new TiledMap("assets/data/" + level + ".tmx"); 
-		var mainLayer:TiledTileLayer = cast tiledMap.getLayer("Tile Layer 1");
+		var mainLayer:TiledTileLayer = cast tiledMap.getLayer("Tiles");
+		var tilesetImage = AssetPaths.robodog_xander_tilemap__png;
 
 		state.map = new FlxTilemap(); 
 		state.map.loadMapFromArray(mainLayer.tileArray,
 	                             tiledMap.width,
 	                             tiledMap.height,
-	                             AssetPaths.forest_joel_tilemap__png,
+	                             //AssetPaths.forest_joel_tilemap__png,
+	                             tilesetImage,
 	                             100, 100, 1);
 
 		// Adjust collision flags 
@@ -33,8 +35,8 @@ class MapLoader
 		bgTiles.loadMapFromArray(bgTileLayer.tileArray,
 	                             tiledMap.width,
 	                             tiledMap.height,
-	                             AssetPaths.forest_joel_tilemap__png,
-	                             100, 100, 1);
+	                             //AssetPaths.forest_joel_tilemap__png,
+	                             tilesetImage, 100, 100, 1);
 		bgTiles.solid = false;
 
 		var skyLayer:TiledTileLayer = cast tiledMap.getLayer("BGSky");
@@ -43,8 +45,7 @@ class MapLoader
 		skyTiles.loadMapFromArray(skyLayer.tileArray,
 	                             tiledMap.width,
 	                             tiledMap.height,
-	                             AssetPaths.forest_joel_tilemap__png,
-	                             100, 100, 1);
+	                             tilesetImage, 100, 100, 1);
 		skyTiles.solid = false;
 
 		state.add(skyTiles);

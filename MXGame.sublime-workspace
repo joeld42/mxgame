@@ -1,1 +1,1085 @@
-{}
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"clic",
+				"clickPlay	function"
+			],
+			[
+				"Asset",
+				"AssetPaths	class"
+			],
+			[
+				"gameInfos",
+				"_gameInfos	var"
+			],
+			[
+				"char",
+				"charPortraitImg"
+			],
+			[
+				"cha",
+				"charPortraitImg"
+			],
+			[
+				"s",
+				"scaleX	Float"
+			],
+			[
+				"setT",
+				"setTileProperties(...)	Void"
+			],
+			[
+				"wid",
+				"widthInTiles	Int"
+			],
+			[
+				"TiledOb",
+				"TiledObjectLayer	class"
+			],
+			[
+				"wal",
+				"walkDir"
+			],
+			[
+				"play",
+				"playAnim"
+			],
+			[
+				"_sprite",
+				"_spriterEngine	spriter.engine.SpriterEngine"
+			],
+			[
+				"pub",
+				"publicdi_wp"
+			],
+			[
+				"q",
+				"to_quaternion"
+			],
+			[
+				"mr",
+				"mrot2"
+			],
+			[
+				"rotatio",
+				"rotation_quaternion"
+			],
+			[
+				"geo",
+				"geometry"
+			],
+			[
+				"set",
+				"set_xyz"
+			],
+			[
+				"game",
+				"gameCamera_"
+			],
+			[
+				"fly",
+				"flyCamera_"
+			],
+			[
+				"x",
+				"xform_"
+			],
+			[
+				"sce",
+				"sceneMesh"
+			],
+			[
+				"tex",
+				"texture"
+			],
+			[
+				"texture",
+				"textureName"
+			],
+			[
+				"load",
+				"loadGeometry"
+			],
+			[
+				"public",
+				"publicFields"
+			],
+			[
+				"app_",
+				"app_path"
+			],
+			[
+				"g_",
+				"g_documentsPath"
+			],
+			[
+				"res",
+				"g_resourcePath"
+			],
+			[
+				"json",
+				"jsonResponse"
+			],
+			[
+				"WIN",
+				"WIN_COMBO_MULT"
+			],
+			[
+				"PLA",
+				"PLANET_COST"
+			],
+			[
+				"new",
+				"newSize"
+			],
+			[
+				"ne",
+				"newFilename"
+			],
+			[
+				"scale",
+				"scaleTag"
+			],
+			[
+				"save",
+				"saveCatalog"
+			],
+			[
+				"cont",
+				"contents"
+			],
+			[
+				"conten",
+				"contentsFile"
+			],
+			[
+				"backu",
+				"backupFile"
+			],
+			[
+				"bac",
+				"backupFile"
+			],
+			[
+				"conte",
+				"contentsFile"
+			],
+			[
+				"src",
+				"srcImg"
+			],
+			[
+				"make",
+				"makeMissingIcons"
+			],
+			[
+				"img",
+				"imgFilename"
+			],
+			[
+				"i",
+				"imgFilename"
+			],
+			[
+				"print",
+				"print_help"
+			],
+			[
+				"cata",
+				"catalogRoot"
+			],
+			[
+				"f",
+				"filename"
+			],
+			[
+				"Constr",
+				"constructor"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "source/Main.hx",
+			"settings":
+			{
+				"buffer_size": 197,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "source/MenuState.hx",
+			"settings":
+			{
+				"buffer_size": 1939,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "source/CharSelectState.hx",
+			"settings":
+			{
+				"buffer_size": 3993,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "source/GameInfo.hx",
+			"settings":
+			{
+				"buffer_size": 429,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/joeld/Toolkits/haxelibrepo/flixel/4,0,1/flixel/FlxSprite.hx",
+			"settings":
+			{
+				"buffer_size": 40810,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Project.xml",
+			"settings":
+			{
+				"buffer_size": 3168,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": ".gitignore",
+			"settings":
+			{
+				"buffer_size": 17,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "README.md",
+			"settings":
+			{
+				"buffer_size": 39,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "source/PlayState.hx",
+			"settings":
+			{
+				"buffer_size": 2017,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "source/AnimSprite.hx",
+			"settings":
+			{
+				"buffer_size": 2626,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "source/MapLoader.hx",
+			"settings":
+			{
+				"buffer_size": 2209,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/joeld/Toolkits/haxelibrepo/flixel-addons/2,0,0/flixel/addons/editors/tiled/TiledObject.hx",
+			"settings":
+			{
+				"buffer_size": 4080,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/data/forest_level1_joel.tmx",
+			"settings":
+			{
+				"buffer_size": 11799,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 187.0,
+		"last_filter": "sort",
+		"selected_items":
+		[
+			[
+				"sort",
+				"Sort Lines"
+			],
+			[
+				"ind",
+				"Indent XML"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/joeld/Google Drive/Kids_Make_Video_Games/MXGame",
+		"/Users/joeld/Google Drive/Kids_Make_Video_Games/MXGame/assets",
+		"/Users/joeld/Google Drive/Kids_Make_Video_Games/MXGame/assets/data",
+		"/Users/joeld/Google Drive/Kids_Make_Video_Games/MXGame/assets/images",
+		"/Users/joeld/Google Drive/Kids_Make_Video_Games/MXGame/source",
+		"/Users/joeld/Toolkits/haxelibrepo/flixel/4,0,1",
+		"/Users/joeld/Toolkits/haxelibrepo/flixel/4,0,1/flixel",
+		"/Users/joeld/Toolkits/haxelibrepo/flixel/4,0,1/flixel/group",
+		"/Users/joeld/Toolkits/haxelibrepo/flixel/4,0,1/flixel/tile",
+		"/Users/joeld/Toolkits/haxelibrepo/flixel-addons/2,0,0",
+		"/Users/joeld/Toolkits/haxelibrepo/flixel-addons/2,0,0/flixel",
+		"/Users/joeld/Toolkits/haxelibrepo/flixel-addons/2,0,0/flixel/addons",
+		"/Users/joeld/Toolkits/haxelibrepo/flixel-addons/2,0,0/flixel/addons/editors",
+		"/Users/joeld/Toolkits/haxelibrepo/flixel-addons/2,0,0/flixel/addons/editors/tiled",
+		"/Users/joeld/Library/Developer/haxelib/SpriterHaxeEngine/2,0,0",
+		"/Users/joeld/Library/Developer/haxelib/SpriterHaxeEngine/2,0,0/spriter",
+		"/Users/joeld/Library/Developer/haxelib/SpriterHaxeEngine/2,0,0/spriter/engine",
+		"/Users/joeld/Library/Developer/haxelib/SpriterHaxeEngine/2,0,0/spriter/library"
+	],
+	"file_history":
+	[
+		"/Users/joeld/Google Drive/Kids_Make_Video_Games/MXGame/MXGame.sublime-projectZZ",
+		"/Users/joeld/Google Drive/Kids_Make_Video_Games/extract_tiles.py",
+		"/Users/joeld/Stuff/flixel/test1proj/test1proj.hxproj",
+		"/Users/joeld/Projects/tk_server/src/application/models.py",
+		"/Users/joeld/Projects/tk_server/src/application/__init__.py",
+		"/Users/joeld/Projects/tk_server/requirements_dev.txt",
+		"/usr/local/bin/dev_appserver.py",
+		"/Users/joeld/Work/sara_kaplan/publicdisplayofselflove-login-info.txt",
+		"/Users/joeld/Google Drive/ProjectBox/Brainstormer/Marketing/Brainstormer NYCMM Promo/Brainstormer.txt",
+		"/Users/joeld/Work/sara_kaplan/testdump.sql",
+		"/private/etc/apache2/httpd.conf",
+		"/Users/joeld/Work/sara_kaplan/publicdi_wp_local.sql",
+		"/Users/joeld/Work/sara_kaplan/publicdi_wp.sql",
+		"/Users/joeld/Work/sara_kaplan/repmap_db.py",
+		"/Users/joeld/Work/sara_kaplan/publicdi_shape.sql",
+		"/etc/hosts",
+		"/Users/joeld/Work/sara_kaplan/public_display.sql",
+		"/Users/joeld/.bash_profile",
+		"/Users/joeld/Toolkits/snowkit/snow-orig/snow/system/audio/Audio.hx",
+		"/Users/joeld/Projects/crossroads/crgame/project.flow",
+		"/Users/joeld/Projects/crossroads/.gitignore",
+		"/Users/joeld/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/joeld/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/joeld/Downloads/blam.py",
+		"/Users/joeld/Projects/ld48jovoc/warmups/ld33_warmup/src/SceneBuilder.hx",
+		"/usr/lib/haxe/std/haxe/io/Bytes.hx",
+		"/Users/joeld/Stuff/skempty/bin/ios.build/cpp/src/haxe/io/Bytes.cpp",
+		"/Users/joeld/Toolkits/snowkit/snow/project/src/input/glkit/snow_input_glkit.cpp",
+		"/Users/joeld/Toolkits/snowkit/snow/snow/system/assets/Assets.hx",
+		"/Users/joeld/Toolkits/snowkit/snow/snow/core/native/io/IO.hx",
+		"/Users/joeld/Toolkits/snowkit/snow/snow/App.hx",
+		"/Users/joeld/Toolkits/snowkit/snow/snow/api/Debug.hx",
+		"/Users/joeld/Toolkits/snowkit/snow/snow/system/window/Window.hx",
+		"/Users/joeld/Toolkits/snowkit/snow/project/include/snow_window.h",
+		"/Users/joeld/Toolkits/snowkit/snow/project/include/render/opengl/snow_opengl.h",
+		"/Users/joeld/Projects/pmines/gamedata/pscenic/planet.obj",
+		"/Users/joeld/Projects/pmines/gamedata/pscenic/monkey_planet.obj",
+		"/Users/joeld/Projects/subway/.gitignore",
+		"/Users/joeld/Projects/subway/.gitmodules",
+		"/Users/joeld/Projects/subway/README.md",
+		"/Users/joeld/Projects/tapnikweb/scripts/report.py",
+		"/Users/joeld/Library/Developer/CoreSimulator/Devices/C6A22A45-968F-40BD-BCC5-7666E88C64B0/data/Applications/3F43BD76-AA17-4881-BBA9-A4831820DCC2/Documents/planets.json",
+		"/Users/joeld/Projects/pmines/scripts/pminesEconSim.py",
+		"/Users/joeld/Projects/subway/samples/mksamples.py",
+		"/Users/joeld/Projects/eardrill/Podfile",
+		"/Users/joeld/Projects/subway/Podfile",
+		"/Users/joeld/Projects/eardrill/samples/mksamples.py",
+		"/Users/joeld/Projects/ld48jovoc/ld_template/CMakeLists.txt",
+		"/Users/joeld/Stuff/lmap_test/baketest.py",
+		"/Users/joeld/Projects/tapnikweb/content/projects/brainstormer.mkd",
+		"/Users/joeld/Projects/tapnikweb/content/posts/brainstormer-ipad.mkd",
+		"/Users/joeld/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/joeld/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/joeld/Library/Application Support/Sublime Text 3/Packages/User/JSON.sublime-settings",
+		"/Users/joeld/Projects/ld48jovoc/.gitignore",
+		"/Users/joeld/Projects/brainstormer/Sci-Fi Brainstormer.xml",
+		"/Users/joeld/scripts/mkicons.py",
+		"/Users/joeld/Projects/brainstormer/World Builder.xml",
+		"/Users/joeld/Projects/brainstormer/Creature Builder.xml",
+		"/Users/joeld/Projects/brainstormer/Classic Brainstormer.xml",
+		"/Users/joeld/Google Drive/ProjectBox/Brainstormer/SrcArt/Watch/word_result_anim/word_result_anim_export/renumber.py",
+		"/Users/joeld/Google Drive/ProjectBox/Brainstormer/SrcArt/Watch/spinrndr/renumber.py",
+		"/Users/joeld/Projects/brainstormer/Podfile",
+		"/Users/joeld/Projects/brainstormer/.gitignore",
+		"/Users/joeld/Sites/index.html",
+		"/Users/joeld/Projects/brainstormer/brainstormer WatchKit App/Images.xcassets/AppIcon.appiconset/Contents.json",
+		"/Users/joeld/Sites/export_test.xml",
+		"/Users/joeld/Projects/mx-afterschool/util/attendance.py",
+		"/Users/joeld/Projects/luddite/example/mesh/Podfile",
+		"/Users/joeld/Projects/mx-afterschool/notes.txt",
+		"/Users/joeld/Projects/brainstormer/Great Works Remixed.xml",
+		"/Users/joeld/Library/Developer/CoreSimulator/Devices/C6A22A45-968F-40BD-BCC5-7666E88C64B0/data/Applications/E4026DA8-0BA4-470B-9EAE-FBF8D750CEF5/Documents/WordSets/48B4332E-29F0-4C37-8749-F536604C07E3.xml",
+		"/Users/joeld/Projects/brainstormer/brainstormer/Images.xcassets/AppIcon.appiconset/Contents.json",
+		"/Users/joeld/Projects/brainstormer/remote_edit/README.txt",
+		"/Users/joeld/.profile",
+		"/Users/joeld/Library/Developer/CoreSimulator/Devices/ACA38016-1439-467F-9738-8B0B51C470D8/data/Containers/Data/Application/219E2291-2319-424E-83F4-578D00938167/Documents/WordSets/5B5DF735-C9FF-4E57-8C3D-E2EA007DAC56.xml",
+		"/Users/joeld/Library/Developer/CoreSimulator/Devices/40437673-F2D9-4D2E-A8C7-A543690A8D3A/data/Containers/Data/Application/56D039F5-DD90-464D-969D-0CC02F2AAE5C/Library/Caches/Copy of Classic Brainstormer 5.xml",
+		"/Library/WebServer/Documents/index.html.en",
+		"/Users/joeld/Stuff/test.cpp",
+		"/Users/joeld/Stuff/test.s",
+		"/Users/joeld/Stuff/Blarg/Blarg.podspec",
+		"/Users/joeld/Projects/mx-afterschool/.gitignore",
+		"/Users/joeld/Projects/mx-afterschool/README.md"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"FlxButton",
+			"visible",
+			"scale",
+			"_player",
+			"_playerSpriter",
+			"ANY",
+			"AllowCollisions",
+			"setTileProperties",
+			"solid",
+			"addSpriter",
+			"moves",
+			"getFile",
+			"skipSplash",
+			"addentity",
+			"usemtl",
+			"usemt",
+			"usemtl",
+			"use",
+			"texture",
+			"ImGuiIO",
+			"inigui",
+			"Ini",
+			"IniFile",
+			"inifile",
+			"BLARGBLARG",
+			"http://publicdisplayofselflove.com/wp-content/uploads/logo-1.png",
+			"src=\"http://publicdisplayofselflove.com/wp-content/uploads/logo-1.png\"",
+			"logo-1",
+			"pd-local",
+			"publicdisplayofselflove.com",
+			"http://publicdisplayofselflove.com",
+			"Thanksgiv",
+			"Database:",
+			"wp_comments",
+			"LoadModule",
+			"InitializeAre",
+			"PushSize_",
+			"TempCount",
+			"PushSize_",
+			"pushStr",
+			"memory_arena",
+			"WorldArena",
+			"WorldAre",
+			"memory_index",
+			"PushSize_",
+			"GameMemory",
+			"game_memory",
+			"Permanent",
+			"game_memory",
+			"Megabytes",
+			"VirtualAlloc",
+			"AssetState_",
+			"Asset->State",
+			"EndAss",
+			"BeginAssetLock",
+			"PushBitmap",
+			"GetBitmap",
+			"active",
+			"sound_list",
+			"InputEventType",
+			"on_event",
+			"onevent",
+			"zilla_",
+			"hudBatcher_",
+			"hudbatc",
+			"hugzilla_title",
+			"Sprite",
+			"hud_batch",
+			"textge",
+			"flycamer",
+			"hudBatcher_",
+			"rot",
+			"sandbox_",
+			"loadGe",
+			"lookupScene",
+			"lookupSceneM",
+			"assets/",
+			"lookup",
+			"lookupSceneMesh",
+			"addSceneObj",
+			"shadowEx",
+			"shad",
+			"setupGame",
+			"nitCamera",
+			"meshDB",
+			"sceneMesh",
+			"drawScenePass",
+			"hug",
+			"hugmesh",
+			"hug",
+			"hugg",
+			"matcapT",
+			"ctrl+up",
+			"meshDB_",
+			"SceneInst",
+			"layer",
+			"hxcpp/",
+			"id_type",
+			"render",
+			"update",
+			"create(",
+			"config",
+			"on_window_created",
+			"snow_config",
+			"root",
+			"path",
+			"g_documents",
+			"default_window_config",
+			"manifest",
+			"data_load file",
+			"cycle_next",
+			"init",
+			"appPath",
+			"render",
+			"glClear",
+			"on_internal_render2",
+			"render",
+			"render(",
+			"render",
+			"on_internal_render",
+			"SystemEventType",
+			"systemEventTyype",
+			"SYstemEventType",
+			"create(",
+			"auto_render",
+			"WindowConfig",
+			"create(",
+			"config"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "source/Main.hx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 197,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								171,
+								171
+							]
+						],
+						"settings":
+						{
+							"haxe-build-id": 0,
+							"syntax": "Packages/Haxe/Haxe.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "source/MenuState.hx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1939,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1854,
+								1896
+							]
+						],
+						"settings":
+						{
+							"haxe-build-id": 0,
+							"syntax": "Packages/Haxe/Haxe.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 280.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "source/CharSelectState.hx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3993,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3384,
+								3384
+							]
+						],
+						"settings":
+						{
+							"haxe-build-id": 0,
+							"syntax": "Packages/Haxe/Haxe.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1041.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "source/GameInfo.hx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 429,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								321,
+								321
+							]
+						],
+						"settings":
+						{
+							"haxe-build-id": 0,
+							"syntax": "Packages/Haxe/Haxe.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/Users/joeld/Toolkits/haxelibrepo/flixel/4,0,1/flixel/FlxSprite.hx",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 40810,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								20770,
+								20777
+							]
+						],
+						"settings":
+						{
+							"haxe-build-id": 0,
+							"syntax": "Packages/Haxe/Haxe.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 8901.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "Project.xml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3168,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1536,
+								1536
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": ".gitignore",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 17,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								17,
+								17
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "README.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 39,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								39,
+								39
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "source/PlayState.hx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2017,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								584,
+								584
+							]
+						],
+						"settings":
+						{
+							"haxe-build-id": 0,
+							"syntax": "Packages/Haxe/Haxe.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 117.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "source/AnimSprite.hx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2626,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								188,
+								167
+							]
+						],
+						"settings":
+						{
+							"haxe-build-id": 0,
+							"syntax": "Packages/Haxe/Haxe.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 118.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "source/MapLoader.hx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2209,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								367,
+								382
+							]
+						],
+						"settings":
+						{
+							"haxe-build-id": 0,
+							"syntax": "Packages/Haxe/Haxe.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 115.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "/Users/joeld/Toolkits/haxelibrepo/flixel-addons/2,0,0/flixel/addons/editors/tiled/TiledObject.hx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4080,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"haxe-build-id": 0,
+							"syntax": "Packages/Haxe/Haxe.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 676.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "assets/data/forest_level1_joel.tmx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11799,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "MXGame.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 226.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -24,6 +24,7 @@ class PlayState extends FlxState
 	public var map:FlxTilemap;
     public var player:AnimSprite;
       
+    public var info : GameInfo;
 	
     private var _isWalking : Bool = false;
 
@@ -34,7 +35,8 @@ class PlayState extends FlxState
 		player.x = 200;
 		player.acceleration.y = 2000;
 
-		MapLoader.loadLevel( this, "forest_level1_joel");
+		// MapLoader.loadLevel( this, "forest_level1_joel");
+		MapLoader.loadLevel( this, "robodog_level1");
 
 
 		// Add the player after the map so they show up in front

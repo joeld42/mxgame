@@ -98,18 +98,17 @@ class CharSelectState extends FlxState
 		super.create();
 	}
 
-	public function clickChar( index: Int ) {
-		trace('clickChar...');
+	public function clickChar( index: Int ) {		
 		showSelectedSprite( index );
 	}
 
 	public function clickPlay() {
+		
+		var playState = new PlayState(); 		
 		var gameInfo = _gameInfos[_selectedIndex];
-
 		trace('Play game ${gameInfo.options.charIdent}');
-		var playState = new PlayState(); 
-		// TODO:
-		// playState.activeGame = gameInfo
+
+		playState.info = gameInfo;
 
 		FlxG.switchState( playState );
 	}

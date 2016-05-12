@@ -92,6 +92,10 @@ TILES = { "platforms" : [
 
 if __name__=='__main__':
 
+	if (len(sys.argv)<3):
+		print "usage: extract_tiles world_id kidname"
+		sys.exit(1)
+
 	name = sys.argv[2]
 	world = sys.argv[1]
 
