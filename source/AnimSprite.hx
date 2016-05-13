@@ -30,6 +30,8 @@ class AnimSprite extends flixel.FlxSprite {
 
     public var animState : AnimState;
 
+    public var _scl : Float = 1.0;
+
     public function attachSpriter( state:PlayState, assetPath : String,  scmlFile : String ) {
 
     	_spriterGroup = new FlxSpriteGroup();
@@ -50,8 +52,8 @@ class AnimSprite extends flixel.FlxSprite {
         _spriter = _spriterEngine.addSpriter( 'Player', 200, 200);
         
         // hacked on scale for the game
-        _spriter.info.scaleX = 0.5;
-        _spriter.info.scaleY = 0.5;
+        _spriter.info.scaleX = _scl;
+        _spriter.info.scaleY = _scl;
 
         animState = Idle;
         
@@ -66,9 +68,9 @@ class AnimSprite extends flixel.FlxSprite {
 			if (this.velocity.x != 0.0) {
 				currState = Walking;
 				if (this.velocity.x > 0.0) {
-					_spriter.info.scaleX = 0.5;	
+					_spriter.info.scaleX = _scl;	
 				} else {
-					_spriter.info.scaleX = -0.5;	
+					_spriter.info.scaleX = -_scl;
 				}
 			}
 

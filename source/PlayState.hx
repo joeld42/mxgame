@@ -42,7 +42,8 @@ class PlayState extends FlxState
 		// Add the player after the map so they show up in front
 		add(player);
 
-		player.attachSpriter( this, "assets/images/sampleplayer/", "assets/data/player.scml" );
+		//player.attachSpriter( this, "assets/images/sampleplayer/", "assets/data/player.scml" );
+		player.attachSpriter( this, "assets/images/robodog/", "assets/data/robodog.scml" );
 
 		// FlxG.cameras.bgColor = new FlxColor( 0xd2e9fc );
 		FlxG.camera.follow( player, FlxCameraFollowStyle.PLATFORMER );
