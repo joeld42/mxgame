@@ -16,6 +16,7 @@ class GameInfo
 	public var _charIcon : FlxSprite;
 	public var _charPortrait : FlxSprite;
 
+
 	public function new ( _options : GameInfoOptions ) 
 	{
 		options = _options;

@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"rdogE",
+				"rdogEnergyPurple	Energy"
+			],
+			[
+				"ea",
+				"easeNone	motion.easing.IEasing"
+			],
+			[
+				"Linear",
+				"Linear	class"
+			],
+			[
+				"ener",
+				"energyBorder	flixel.FlxSprite"
+			],
+			[
 				"clic",
 				"clickPlay	function"
 			],
@@ -220,10 +236,26 @@
 			}
 		},
 		{
+			"file": "source/PlayState.hx",
+			"settings":
+			{
+				"buffer_size": 3776,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "source/Energy.hx",
+			"settings":
+			{
+				"buffer_size": 398,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "source/CharSelectState.hx",
 			"settings":
 			{
-				"buffer_size": 3993,
+				"buffer_size": 3992,
 				"line_ending": "Unix"
 			}
 		},
@@ -236,11 +268,14 @@
 			}
 		},
 		{
-			"file": "/Users/joeld/Toolkits/haxelibrepo/flixel/4,0,1/flixel/FlxSprite.hx",
+			"contents": "platform :ios, '8.0'\nworkspace 'Gallium'\n\nsource 'https://github.com/CocoaPods/Specs.git'\ninhibit_all_warnings!\n\ntarget \"Gallium\" do\n    xcodeproj 'Gallium'\n\n    pod 'GPUImage', '0.1.7'\n    pod 'AFNetworking', '2.6.0'\n    pod 'AFgzipRequestSerializer', '0.0.2'\n    pod 'BlocksKit', '2.2.5'\n#    pod 'Coverflow', :podspec => 'Vendor/Coverflow.podspec'\n    pod 'IIIAsync', '1.0.5'\n#    pod 'NewRelicAgent', '5.0.1'\n#    pod 'FBSDKCoreKit', '4.2.0'\n#    pod 'FBSDKLoginKit', '4.2.0'\n#    pod 'FBSDKShareKit', '4.2.0'\n    pod 'TRVSMonitor', '0.0.3'\n    pod 'SDWebImage', '3.7.3'\n    pod 'SVSegmentedControl', '0.2'\n    pod 'SlackTextViewController', '1.2.10'\n#    pod 'POP+MCAnimate', '2.0.1'\n    pod 'UIViewController+BlockSegue', '1.0.0'\n    pod 'Firebase', '2.2.2'\n#    pod 'SwrveSDK', '3.4'\n#    pod 'ARAnalytics/DSL', '3.5.0'\n#    pod 'ARAnalytics/GoogleAnalytics', '3.5.0'\n#    pod 'ARAnalytics/Swrve', '3.5.0'\n#    pod 'ARAnalytics/Segmentio', '3.5.0'\n#    pod 'APAddressBook', '0.1.6'\n#    pod 'AMPopTip', '0.8'\n#    pod 'SYNFadingLabel', '0.1.2'\n    pod 'MRProgress', '0.8.2'\n#    pod 'twitter-text-objc', '1.6.1'\n    pod 'GZIP', '1.1.1'\n    pod 'ActionSheetPicker-3.0', :git => 'https://github.com/zecmo/ActionSheetPicker-3.0'\n#    pod 'LUKeychainAccess', '1.0.1'\n#    pod 'TMTumblrSDK', '2.1.3'\n#    pod 'STTwitter', '0.2.1'\n#    pod 'Helpshift', '4.11.1'\n#    pod 'Branch', '0.6.3'\n    pod 'STKWebKitViewController', '0.3.0'\n    pod 'DRCollectionViewTableLayout', '1.0.5'\n    pod 'CRToast', '0.0.9'\n    pod 'iCarousel', '1.8.2'\n    pod 'Tweaks', '2.0.0'FBTweak\n    \n    #   Amazon Pods\n    pod 'AWSCore', ‘2.2.2’\n#   pod 'AWSAutoScaling'\n#   pod 'AWSCloudWatch'\n    pod 'AWSDynamoDB', ‘2.2.2’\n#   pod 'AWSEC2'\n#   pod 'AWSElasticLoadBalancing'\n#   pod 'AWSKinesis'\n#   pod 'AWSLambda'\n#   pod 'AWSMachineLearning'\n#   pod 'AWSMobileAnalytics'\n    pod 'AWSS3', ‘2.2.2’\n#   pod 'AWSSES'\n#   pod 'AWSSimpleDB'\n    pod 'AWSSNS', ‘2.2.2’\n    pod 'AWSSQS', ‘2.2.2’\n    pod 'AWSCognito', ‘2.2.2’\nend\n\ntarget \"GalliumTests\" do\n    xcodeproj 'Gallium'\n\n    pod 'TRVSMonitor', '0.0.3'\nend\n",
+			"file": "/Users/joeld/Work/gallium/GalliumApp/Podfile",
+			"file_size": 2104,
+			"file_write_time": 131079749150000000,
 			"settings":
 			{
-				"buffer_size": 40810,
-				"line_ending": "Windows"
+				"buffer_size": 2087,
+				"line_ending": "Unix"
 			}
 		},
 		{
@@ -252,14 +287,6 @@
 			}
 		},
 		{
-			"file": ".gitignore",
-			"settings":
-			{
-				"buffer_size": 17,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "README.md",
 			"settings":
 			{
@@ -268,18 +295,10 @@
 			}
 		},
 		{
-			"file": "source/PlayState.hx",
-			"settings":
-			{
-				"buffer_size": 2017,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "source/AnimSprite.hx",
 			"settings":
 			{
-				"buffer_size": 2626,
+				"buffer_size": 2665,
 				"line_ending": "Unix"
 			}
 		},
@@ -287,7 +306,15 @@
 			"file": "source/MapLoader.hx",
 			"settings":
 			{
-				"buffer_size": 2209,
+				"buffer_size": 3078,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/joeld/Work/gallium/GxHeatMap/.gitignore",
+			"settings":
+			{
+				"buffer_size": 21,
 				"line_ending": "Unix"
 			}
 		},
@@ -357,18 +384,14 @@
 		"/Users/joeld/Toolkits/haxelibrepo/flixel/4,0,1/flixel",
 		"/Users/joeld/Toolkits/haxelibrepo/flixel/4,0,1/flixel/group",
 		"/Users/joeld/Toolkits/haxelibrepo/flixel/4,0,1/flixel/tile",
-		"/Users/joeld/Toolkits/haxelibrepo/flixel-addons/2,0,0",
-		"/Users/joeld/Toolkits/haxelibrepo/flixel-addons/2,0,0/flixel",
-		"/Users/joeld/Toolkits/haxelibrepo/flixel-addons/2,0,0/flixel/addons",
-		"/Users/joeld/Toolkits/haxelibrepo/flixel-addons/2,0,0/flixel/addons/editors",
-		"/Users/joeld/Toolkits/haxelibrepo/flixel-addons/2,0,0/flixel/addons/editors/tiled",
-		"/Users/joeld/Library/Developer/haxelib/SpriterHaxeEngine/2,0,0",
-		"/Users/joeld/Library/Developer/haxelib/SpriterHaxeEngine/2,0,0/spriter",
-		"/Users/joeld/Library/Developer/haxelib/SpriterHaxeEngine/2,0,0/spriter/engine",
-		"/Users/joeld/Library/Developer/haxelib/SpriterHaxeEngine/2,0,0/spriter/library"
+		"/Users/joeld/Toolkits/haxelibrepo/flixel/4,0,1/flixel/tweens",
+		"/Users/joeld/Toolkits/haxelibrepo/flixel/4,0,1/flixel/tweens/motion"
 	],
 	"file_history":
 	[
+		"/Users/joeld/Google Drive/Kids_Make_Video_Games/MXGame/.gitignore",
+		"/Users/joeld/Google Drive/Kids_Make_Video_Games/MXGame/source/ForestPlayState.hx",
+		"/Users/joeld/Projects/storycircle/StoryCircle/Podfile",
 		"/Users/joeld/Google Drive/Kids_Make_Video_Games/MXGame/MXGame.sublime-projectZZ",
 		"/Users/joeld/Google Drive/Kids_Make_Video_Games/extract_tiles.py",
 		"/Users/joeld/Stuff/flixel/test1proj/test1proj.hxproj",
@@ -470,6 +493,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"origin",
+			"scrollFactor",
+			"deadly",
 			"FlxButton",
 			"visible",
 			"scale",
@@ -594,10 +620,7 @@
 			"systemEventTyype",
 			"SYstemEventType",
 			"create(",
-			"auto_render",
-			"WindowConfig",
-			"create(",
-			"config"
+			"auto_render"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -615,7 +638,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 6,
 			"sheets":
 			[
 				{
@@ -644,7 +667,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 12,
 					"type": "text"
 				},
 				{
@@ -670,27 +693,88 @@
 							"syntax": "Packages/Haxe/Haxe.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 280.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "source/CharSelectState.hx",
+					"file": "source/PlayState.hx",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3993,
+						"buffer_size": 3776,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3384,
-								3384
+								3744,
+								3744
+							]
+						],
+						"settings":
+						{
+							"haxe-build-id": 0,
+							"syntax": "Packages/Haxe/Haxe.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "source/Energy.hx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 398,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								354,
+								354
+							]
+						],
+						"settings":
+						{
+							"haxe-build-id": 0,
+							"syntax": "Packages/Haxe/Haxe.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "source/CharSelectState.hx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3992,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								303,
+								353
 							]
 						],
 						"settings":
@@ -699,14 +783,14 @@
 							"syntax": "Packages/Haxe/Haxe.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 1041.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 5,
 					"file": "source/GameInfo.hx",
 					"semi_transient": false,
 					"settings":
@@ -725,47 +809,48 @@
 						"settings":
 						{
 							"haxe-build-id": 0,
-							"syntax": "Packages/Haxe/Haxe.tmLanguage"
+							"syntax": "Packages/Haxe/Haxe.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "/Users/joeld/Toolkits/haxelibrepo/flixel/4,0,1/flixel/FlxSprite.hx",
-					"semi_transient": true,
+					"buffer": 6,
+					"file": "/Users/joeld/Work/gallium/GalliumApp/Podfile",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 40810,
+						"buffer_size": 2087,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								20770,
-								20777
+								1568,
+								1568
 							]
 						],
 						"settings":
 						{
-							"haxe-build-id": 0,
-							"syntax": "Packages/Haxe/Haxe.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 8901.0,
+						"translation.y": 102.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 7,
 					"file": "Project.xml",
 					"semi_transient": false,
 					"settings":
@@ -790,39 +875,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 13,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": ".gitignore",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 17,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								17,
-								17
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
+					"buffer": 8,
 					"file": "README.md",
 					"semi_transient": false,
 					"settings":
@@ -846,24 +903,53 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
-					"file": "source/PlayState.hx",
+					"buffer": 9,
+					"file": "source/AnimSprite.hx",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2017,
+						"buffer_size": 2665,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								584,
-								584
+								1944,
+								1944
+							]
+						],
+						"settings":
+						{
+							"haxe-build-id": 0,
+							"syntax": "Packages/Haxe/Haxe.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 527.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "source/MapLoader.hx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3078,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2652,
+								2652
 							]
 						],
 						"settings":
@@ -873,72 +959,48 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 117.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 9,
-					"file": "source/AnimSprite.hx",
+					"file": "assets/images/tiles.png",
+					"semi_transient": true,
+					"stack_index": 4,
+					"type": "image"
+				},
+				{
+					"buffer": 11,
+					"file": "/Users/joeld/Work/gallium/GxHeatMap/.gitignore",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2626,
+						"buffer_size": 21,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								188,
-								167
+								21,
+								21
 							]
 						],
 						"settings":
 						{
-							"haxe-build-id": 0,
-							"syntax": "Packages/Haxe/Haxe.tmLanguage"
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 118.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 10,
 					"type": "text"
 				},
 				{
-					"buffer": 10,
-					"file": "source/MapLoader.hx",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2209,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								367,
-								382
-							]
-						],
-						"settings":
-						{
-							"haxe-build-id": 0,
-							"syntax": "Packages/Haxe/Haxe.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 115.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
+					"buffer": 12,
 					"file": "/Users/joeld/Toolkits/haxelibrepo/flixel-addons/2,0,0/flixel/addons/editors/tiled/TiledObject.hx",
 					"semi_transient": false,
 					"settings":
@@ -961,14 +1023,14 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 676.0,
+						"translation.y": 104.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 12,
+					"buffer": 13,
 					"file": "assets/data/forest_level1_joel.tmx",
 					"semi_transient": false,
 					"settings":
@@ -994,7 +1056,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
+					"stack_index": 14,
 					"type": "text"
 				}
 			]
