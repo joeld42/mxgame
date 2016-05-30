@@ -48,6 +48,35 @@ class CharSelectState extends FlxState
 		
 		_gameInfos.push( info );
 
+		info = new GameInfo({ 
+        			charIdent : 'cody',
+	        		charName : 'Cody',
+	        		charDesc : 'Cody the Dog must reach his\nfood without pesky humans\nslowing him down.'
+	        });		
+		_gameInfos.push( info );
+
+		info = new GameInfo({ 
+        			charIdent : 'underworld',
+	        		charName : 'Ninja Kitty',
+	        		charDesc : 'Ninja-Kitty must evade danger\nto find the portal out of\nthe underworld.'
+	        });		
+		_gameInfos.push( info );
+
+		info = new GameInfo({ 
+        			charIdent : 'lavapool',
+	        		charName : 'Lava Pools',
+	        		charDesc : 'Ninja Kitty must use Ninja Skills\nto survive the world of\ndangerous Lava Pools.'
+	        });		
+		_gameInfos.push( info );
+
+		info = new GameInfo({ 
+        			charIdent : 'leopard',
+	        		charName : 'The Leopard',
+	        		charDesc : 'A Brave Leopard must travel\nthrough a rain forest\nto reach her cubs.'
+	        });		
+		_gameInfos.push( info );
+
+
         while (_gameInfos.length < 10) {
         	var unkInfo : GameInfo = new GameInfo({ 
 	        		charIdent : "unknown",
