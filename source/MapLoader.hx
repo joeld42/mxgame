@@ -14,22 +14,33 @@ import motion.Actuate;
 import motion.easing.Quad;
 import motion.easing.Linear;
 
+import flash.system.System;
+
 class MapLoader
 {
 	private static var rng : FlxRandom = null;
 
-	public static function loadLevel(state:PlayState, level:String) {
+	public static function loadLevel(state:PlayState, tilesetImage:String, charIdent:String, level : Int ) {
 
 		if (rng==null) {
 			rng = new FlxRandom();
 		}
 
+		var levelFile : String = 'assets/data/${charIdent}_level${level}.tmx';
+		trace('Load level ${levelFile}');
+		var tiledMap = new TiledMap( levelFile ); 
+		if (tiledMap == null) {
+			trace("ERROR: failed to load level file.");
+			System.exit(0);
+			return;
+		}
 
-		var tiledMap = new TiledMap("assets/data/" + level + ".tmx"); 
 		var mainLayer:TiledTileLayer = cast tiledMap.getLayer("Tiles");
-		var tilesetImage = AssetPaths.robodog_xander_tilemap__png;
-
-
+		if (mainLayer == null) {
+			trace("ERROR: Missing 'Tiles' layer.");
+			System.exit(0);
+			return;
+		}
 
 		state.map = new FlxTilemap(); 
 		state.map.loadMapFromArray(mainLayer.tileArray,
@@ -41,17 +52,22 @@ class MapLoader
 
 
 		// Custom collision rules for tiles
-		if (level=="forest") {
+		if (charIdent=="forest") {
 			// Adjust collision flags 
 			state.map.setTileProperties( 1, FlxObject.UP, null, null, 5); // jump-thru platforms
 			state.map.setTileProperties( 29, FlxObject.ANY, state.playerHitDeadlyTile );
-		} else if (level=="robodog") {
+		} else if (charIdent=="robodog") {
 			trace("TODO: robodog tiles...");
 			state.map.setTileProperties( 15, FlxObject.ANY, state.playerHitDeadlyTile, null,  5);
 		}
 
 
 		var bgTileLayer:TiledTileLayer = cast tiledMap.getLayer("Background tiles");
+		if (bgTileLayer == null) {
+			trace("ERROR: Missing 'Background tiles' layer.");
+			System.exit(0);
+			return;
+		}
 
 		var bgTiles = new FlxTilemap(); 
 		bgTiles.loadMapFromArray(bgTileLayer.tileArray,
@@ -62,6 +78,11 @@ class MapLoader
 		bgTiles.solid = false;
 
 		var skyLayer:TiledTileLayer = cast tiledMap.getLayer("BGSky");
+		if (skyLayer == null) {
+			trace("ERROR: Missing 'BGSky' layer.");
+			System.exit(0);
+			return;
+		}
 
 		var skyTiles = new FlxTilemap(); 
 		skyTiles.loadMapFromArray(skyLayer.tileArray,
@@ -78,6 +99,12 @@ class MapLoader
 
 		// Apply object layers
 		var objectLayer:TiledObjectLayer = cast tiledMap.getLayer("objects");
+
+		if (objectLayer == null) {
+			trace("ERROR: Missing 'objects' layer.");			
+			return;
+		}
+
 		for (object in objectLayer.objects) {
 			if (object.name=="player") {
 				state.player.x = object.x;

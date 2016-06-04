@@ -11,6 +11,7 @@ import flixel.text.FlxText;
 import flixel.ui.FlxButton;
 import flixel.math.FlxPoint;
 import flixel.math.FlxMath;
+import flixel.math.FlxRandom;
 import flixel.util.FlxColor;
 
 import motion.Actuate;
@@ -26,6 +27,9 @@ class CharSelectState extends FlxState
 
 	private var _charTitle : FlxText;
 	private var _charDesc : FlxText;
+	private var _charCreator : FlxText;
+
+	private var _rng : FlxRandom = null;
 
 	override public function create():Void
 	{
@@ -35,14 +39,18 @@ class CharSelectState extends FlxState
 		_btnPlay = new FlxButton( 284, 473, clickPlay ); 
 		_btnPlay.loadGraphic(AssetPaths.btn_play__png, false); 
 
+		_rng = new FlxRandom();
+
         add(_bg);
         add(_btnPlay);
 
         _gameInfos = new Array<GameInfo>();
 
         var info : GameInfo = new GameInfo({ 
-        			charIdent : 'robodog',
+        			charIdent : 'robodog',        			
 	        		charName : 'Robo-Dog',
+	        		creator : 'Xander',
+	        		tileset : AssetPaths.robodog_xander_tilemap__png,
 	        		charDesc : 'Canis Robotus, this mechanized\nhero fights baddies with hover\nfeet, turbo-engines and more!'
 	        });
 		
@@ -51,6 +59,8 @@ class CharSelectState extends FlxState
 		info = new GameInfo({ 
         			charIdent : 'cody',
 	        		charName : 'Cody',
+	        		creator : 'Anja',
+	        		tileset : AssetPaths.house_anja_tilemap__png,
 	        		charDesc : 'Cody the Dog must reach his\nfood without pesky humans\nslowing him down.'
 	        });		
 		_gameInfos.push( info );
@@ -58,6 +68,8 @@ class CharSelectState extends FlxState
 		info = new GameInfo({ 
         			charIdent : 'underworld',
 	        		charName : 'Ninja Kitty',
+	        		creator : 'Nathaniel',
+	        		tileset : AssetPaths.underworld_nathaniel_tilemap__png,
 	        		charDesc : 'Ninja-Kitty must evade danger\nto find the portal out of\nthe underworld.'
 	        });		
 		_gameInfos.push( info );
@@ -65,23 +77,60 @@ class CharSelectState extends FlxState
 		info = new GameInfo({ 
         			charIdent : 'lavapool',
 	        		charName : 'Lava Pools',
+	        		creator : 'Nickleson',
+	        		tileset : AssetPaths.lavapool_nickleson_tilemap__png,
 	        		charDesc : 'Ninja Kitty must use Ninja Skills\nto survive the world of\ndangerous Lava Pools.'
 	        });		
 		_gameInfos.push( info );
 
 		info = new GameInfo({ 
+        			charIdent : 'tiger',
+	        		charName : 'Mountain Tiger',
+	        		creator : 'Sarah',
+	        		tileset : AssetPaths.mountains_sarah_tilemap__png,
+	        		charDesc : 'A mountain Tiger\nexplores treacherous terrain.'
+	        });		
+		_gameInfos.push( info );
+
+
+		info = new GameInfo({ 
         			charIdent : 'leopard',
 	        		charName : 'The Leopard',
+	        		creator : 'Serene',
+					tileset : AssetPaths.rainforest_serene_tilemap__png,
 	        		charDesc : 'A Brave Leopard must travel\nthrough a rain forest\nto reach her cubs.'
 	        });		
 		_gameInfos.push( info );
+
+		info = new GameInfo({ 
+    			charIdent : 'magickitty',
+        		charName : 'Magic Kitty',
+        		creator : 'Holly',
+        		tileset : AssetPaths.holly_random_tilemap__png,
+        		charDesc : 'A magical Alicorn-kitty is \ntransported to Random Land.'
+        });		
+		_gameInfos.push( info );
+
+		info = new GameInfo({ 
+    			charIdent : 'forest',
+        		charName : 'Test Forest',
+        		creator : 'Joel',
+        		tileset : AssetPaths.forest_joel_tilemap__png,
+        		charDesc : 'Purple Test Guy explores the\nTest Forest. Watch out\nfor Spikes!'
+        });		
+		_gameInfos.push( info );
+
+		// Shuffle the order of the characters 
+		_rng.shuffleArray( _gameInfos, 40 );
 
 
         while (_gameInfos.length < 10) {
         	var unkInfo : GameInfo = new GameInfo({ 
 	        		charIdent : "unknown",
 	        		charName : 'Unknown${_gameInfos.length+1}',
-	        		charDesc : 'This is a test character ${_gameInfos.length+1}'
+	        		charDesc : 'This is a placeholder ${_gameInfos.length+1}',
+	        		tileset : AssetPaths.forest_joel_tilemap__png,
+	        		creator : 'None'
 	        });	     
 
 	        _gameInfos.push( unkInfo );   	        

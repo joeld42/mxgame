@@ -47,8 +47,9 @@ class PlayState extends FlxState
 		player.acceleration.y = 2000;
 
 		// MapLoader.loadLevel( this, "forest_level1_joel");
-		MapLoader.loadLevel( this, "robodog_level1");
-
+		// MapLoader.loadLevel( this, "robodog_level1");
+		MapLoader.loadLevel( this, info.options.tileset, info.options.charIdent, 1 );
+	
 		// Add the player after the map so they show up in front
 		add(player);
 
