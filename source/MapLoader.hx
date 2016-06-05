@@ -9,6 +9,7 @@ import flixel.addons.editors.tiled.TiledObject;
 import flixel.addons.editors.tiled.TiledObjectLayer; 
 import flixel.tile.FlxTilemap;
 import flixel.math.FlxRandom;
+import flixel.FlxSprite;
 
 import motion.Actuate;
 import motion.easing.Quad;
@@ -106,25 +107,66 @@ class MapLoader
 		}
 
 		for (object in objectLayer.objects) {
+			trace('OBJECT: ${object.name}');
 			if (object.name=="player") {
 				state.player.x = object.x;
 				state.player.y = object.y;
-			} else if (object.gid == 57) {				
-				// Green energy ball
-				addPowerUp( state, EnergyGreen, AssetPaths.robodog_energy_green__png, 10.0, object.x, object.y-100);
-			} else if (object.gid == 58) {
-				// Purple energy ball
-				addPowerUp( state, EnergyPurple, AssetPaths.robodog_energy_purple__png, 30.0, object.x, object.y-100);
-			} else if (object.gid == 67) {
-				// Blue energy ball
-				addPowerUp( state, EnergyBlue, AssetPaths.robodog_energy_blue__png, 100.0, object.x, object.y-100);
-			} else if (object.gid == 68) {
-				// Red energy ball
-				addPowerUp( state, EnergyRed, AssetPaths.robodog_energy_red__png, 10.0, object.x, object.y-100);
 
-			} else {
-				trace( 'unhandled map object ${object.name} ${object.type} ${object.gid}');
+			} else if (object.name=="goal") {
+				
+				trace("Adding goal...");
+				var goal = new FlxSprite( object.x, object.y  );
+				goal.loadGraphic('assets/images/${charIdent}_goal.png', false );
+				state.goal = goal;
+				goal.y -= goal.height;
+				state.add( goal );
+
+			// Tile objects	
+			} 
+
+			// Otherwise, create level specific objects
+			if (charIdent=="robodog")
+			{
+				createLevelObjectsRobodog( state, object );
+			} 
+			else if (charIdent=="cody") 
+			{
+				createLevelObjectsCody( state, object );
 			}
+		}
+	}
+
+	static function createLevelObjectsRobodog( state: PlayState, object : TiledObject )
+	{
+		if (object.gid == 57) {				
+			// Green energy ball
+			addPowerUp( state, EnergyGreen, AssetPaths.robodog_energy_green__png, 10.0, object.x, object.y-100);
+		} else if (object.gid == 58) {
+			// Purple energy ball
+			addPowerUp( state, EnergyPurple, AssetPaths.robodog_energy_purple__png, 30.0, object.x, object.y-100);
+		} else if (object.gid == 67) {
+			// Blue energy ball
+			addPowerUp( state, EnergyBlue, AssetPaths.robodog_energy_blue__png, 100.0, object.x, object.y-100);
+		} else if (object.gid == 68) {
+			// Red energy ball
+			addPowerUp( state, EnergyRed, AssetPaths.robodog_energy_red__png, 10.0, object.x, object.y-100);
+		} else {
+			trace( 'unhandled map object ${object.name} ${object.type} ${object.gid}');
+		}
+	}
+
+	static function createLevelObjectsCody( state: PlayState, object : TiledObject )
+	{
+		trace( 'CreateLevelObjectsCody: ${object.gid}' );
+		if ( (object.gid == 21) || (object.gid == 22) ||
+			 (object.gid == 31) || (object.gid == 32) ||
+			 (object.gid == 41) || (object.gid == 42) )			
+		 {
+			// Food
+			trace("FOOD");
+			addPowerUp( state, CodyFood, AssetPaths.cody_food1__png, 10.0, object.x, object.y-100);
+		} else {
+			trace( 'unhandled map object ${object.name} ${object.type} ${object.gid}');
 		}
 	}
 

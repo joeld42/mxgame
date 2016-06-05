@@ -10,6 +10,8 @@ enum  PowerupType {
 	EnergyGreen;
 	EnergyBlue;
 	EnergyPurple;
+
+	CodyFood;
 }
 
 

@@ -26,8 +26,12 @@ class PlayState extends FlxState
     public var player:AnimSprite;
       
     public var info : GameInfo;
+
+    public var goal : FlxSprite;
 	
     private var _isWalking : Bool = false;
+
+    private var _levelComplete : Bool = false;
 
     private var energyBars : Array<Energy>;
 
@@ -39,6 +43,8 @@ class PlayState extends FlxState
     var rdogEnergyBlue : Energy;
     var rdogEnergyPurple : Energy;
 
+    var codyEnergyFood : Energy;
+
 	override public function create():Void
 	{
 		player = new AnimSprite();
@@ -49,7 +55,7 @@ class PlayState extends FlxState
 		// MapLoader.loadLevel( this, "forest_level1_joel");
 		// MapLoader.loadLevel( this, "robodog_level1");
 		MapLoader.loadLevel( this, info.options.tileset, info.options.charIdent, 1 );
-	
+
 		// Add the player after the map so they show up in front
 		add(player);
 
@@ -71,14 +77,23 @@ class PlayState extends FlxState
 
 	override public function update(elapsed:Float):Void
 	{
-		movePlayer();
+		if (!_levelComplete) {
+			movePlayer();
+			super.update(elapsed);
+			FlxG.collide(map, player);
 
-		super.update(elapsed);
-		FlxG.collide(map, player);
+			FlxG.overlap( items, player, collideItems );
 
-		FlxG.overlap( items, player, collideItems );
+			if (goal != null)
+			{
+				FlxG.overlap( goal, player, collideGoal );
+			}
 
-		player.updateSpriter(elapsed);
+			player.updateSpriter(elapsed);
+		} else {
+			super.update(elapsed);
+		}
+
 	}
 
 	private function movePlayer() : Void
@@ -107,26 +122,45 @@ class PlayState extends FlxState
 			player.velocity.y = -1500.0;
 		}
 
-		if ((FlxG.keys.pressed.X) && (rdogEnergyRed.energy > 0.0))
+		// Robodog updates
+		if (rdogEnergyRed != null)
 		{
-			// trace('flying...');
-			if (player.velocity.y > 50) {
-				// immediately stop falling
-				player.velocity.y = 0.0;
-			} else if (player.velocity.y > -200) {
-				// accelerate up
-				player.velocity.y  -= 50.0;
-			} else {
-				// max up velocity
-				player.velocity.y = -200.0;
+			if ((FlxG.keys.pressed.X) && (rdogEnergyRed.energy > 0.0))
+			{
+				// trace('flying...');
+				if (player.velocity.y > 50) {
+					// immediately stop falling
+					player.velocity.y = 0.0;
+				} else if (player.velocity.y > -200) {
+					// accelerate up
+					player.velocity.y  -= 50.0;
+				} else {
+					// max up velocity
+					player.velocity.y = -200.0;
+				}
+				rdogEnergyRed.setEnergy( rdogEnergyRed.energy - 0.2 );			
 			}
-			rdogEnergyRed.setEnergy( rdogEnergyRed.energy - 0.2 );			
+
+			if (FlxG.keys.justPressed.Z) {
+				trace('refill');
+				rdogEnergyRed.setEnergy( 100.0 );
+			}
 		}
 
-		if (FlxG.keys.justPressed.Z) {
-			trace('refill');
-			rdogEnergyRed.setEnergy( 100.0 );
+		// Cody updates
+		if (codyEnergyFood != null) {
+			codyEnergyFood.setEnergy( codyEnergyFood.energy - 0.05 );
 		}
+
+
+	}
+
+	public function collideGoal( item : FlxSprite, player : FlxSprite) 
+	{
+		_levelComplete = true;
+
+		trace("GOAL REACHED, go to next level...");
+		FlxG.switchState( new CharSelectState() );
 	}
 
 	public function collideItems( item : Powerup, player : AnimSprite )
@@ -146,6 +180,9 @@ class PlayState extends FlxState
 			item.kill();			
 		} else if (item.type_ == EnergyPurple) {
 			rdogEnergyPurple.setEnergy( rdogEnergyPurple.energy + item.amount_ );
+			item.kill();						
+		} else if (item.type_ == CodyFood) {
+			codyEnergyFood.setEnergy( codyEnergyFood.energy + item.amount_ );
 			item.kill();						
 		}
 	}
@@ -196,6 +233,9 @@ class PlayState extends FlxState
 
 			rdogEnergyPurple = addEnergyBar( "PURPLE", 0xffa366f7 );
 			rdogEnergyPurple.setEnergy( 1.0 );
+		} else if (info.options.charIdent == "cody") {
+			codyEnergyFood = addEnergyBar( "Food", 0xffeaa52d );
+			codyEnergyFood.setEnergy( 10.0 );
 		}
 	}
 }
