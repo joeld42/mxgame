@@ -51,7 +51,8 @@ class CharSelectState extends FlxState
 	        		charName : 'Robo-Dog',
 	        		creator : 'Xander',
 	        		tileset : AssetPaths.robodog_xander_tilemap__png,
-	        		charDesc : 'Canis Robotus, this mechanized\nhero fights baddies with hover\nfeet, turbo-engines and more!'
+	        		charDesc : 'Canis Robotus, this mechanized\nhero fights baddies with hover\nfeet, turbo-engines and more!',
+	        		gameOverText : "Robodog has been defeated!"
 	        });
 		
 		_gameInfos.push( info );
@@ -61,7 +62,8 @@ class CharSelectState extends FlxState
 	        		charName : 'Cody',
 	        		creator : 'Anja',
 	        		tileset : AssetPaths.house_anja_tilemap__png,
-	        		charDesc : 'Cody the Dog must reach his\nfood without pesky humans\nslowing him down.'
+	        		charDesc : 'Cody the Dog must reach his\nfood without pesky humans\nslowing him down.',
+	        		gameOverText : "Cody decides to take a nap instead!"
 	        });		
 		_gameInfos.push( info );
 
@@ -70,7 +72,9 @@ class CharSelectState extends FlxState
 	        		charName : 'Ninja Kitty',
 	        		creator : 'Nathaniel',
 	        		tileset : AssetPaths.underworld_nathaniel_tilemap__png,
-	        		charDesc : 'Ninja-Kitty must evade danger\nto find the portal out of\nthe underworld.'
+	        		charDesc : 'Ninja-Kitty must evade danger\nto find the portal out of\nthe underworld.',
+	        		gameOverText : "Ninja kitty is stuck in the underworld!"
+
 	        });		
 		_gameInfos.push( info );
 
@@ -79,7 +83,9 @@ class CharSelectState extends FlxState
 	        		charName : 'Lava Pools',
 	        		creator : 'Nickleson',
 	        		tileset : AssetPaths.lavapool_nickleson_tilemap__png,
-	        		charDesc : 'Ninja Kitty must use Ninja Skills\nto survive the world of\ndangerous Lava Pools.'
+	        		charDesc : 'Ninja Kitty must use Ninja Skills\nto survive the world of\ndangerous Lava Pools.',
+	        		gameOverText : "You fell into a Lava Pool"
+
 	        });		
 		_gameInfos.push( info );
 
@@ -88,7 +94,8 @@ class CharSelectState extends FlxState
 	        		charName : 'Mountain Tiger',
 	        		creator : 'Sarah',
 	        		tileset : AssetPaths.mountains_sarah_tilemap__png,
-	        		charDesc : 'A mountain Tiger\nexplores treacherous terrain.'
+	        		charDesc : 'A mountain Tiger\nexplores treacherous terrain.',
+	        		gameOverText : "Oh no! The Tiger is lost in the mountains"
 	        });		
 		_gameInfos.push( info );
 
@@ -98,7 +105,8 @@ class CharSelectState extends FlxState
 	        		charName : 'The Leopard',
 	        		creator : 'Serene',
 					tileset : AssetPaths.rainforest_serene_tilemap__png,
-	        		charDesc : 'A Brave Leopard must travel\nthrough a rain forest\nto reach her cubs.'
+	        		charDesc : 'A Brave Leopard must travel\nthrough a rain forest\nto reach her cubs.',
+	        		gameOverText : "Lost in the Jungle!"
 	        });		
 		_gameInfos.push( info );
 
@@ -107,7 +115,8 @@ class CharSelectState extends FlxState
         		charName : 'Magic Kitty',
         		creator : 'Holly',
         		tileset : AssetPaths.holly_random_tilemap__png,
-        		charDesc : 'A magical Alicorn-kitty is \ntransported to Random Land.'
+        		charDesc : 'A magical Alicorn-kitty is \ntransported to Random Land.',
+        		gameOverText : "Random World is consumed by DISCORD!"
         });		
 		_gameInfos.push( info );
 
@@ -116,7 +125,8 @@ class CharSelectState extends FlxState
         		charName : 'Test Forest',
         		creator : 'Joel',
         		tileset : AssetPaths.forest_joel_tilemap__png,
-        		charDesc : 'Purple Test Guy explores the\nTest Forest. Watch out\nfor Spikes!'
+        		charDesc : 'Purple Test Guy explores the\nTest Forest. Watch out\nfor Spikes!',
+        		gameOverText : "TODO: Write Game Over Text!"
         });		
 		_gameInfos.push( info );
 
@@ -129,6 +139,7 @@ class CharSelectState extends FlxState
 	        		charIdent : "unknown",
 	        		charName : 'Unknown${_gameInfos.length+1}',
 	        		charDesc : 'This is a placeholder ${_gameInfos.length+1}',
+	        		gameOverText : "Oh Noes! Gaem Ovar!!",
 	        		tileset : AssetPaths.forest_joel_tilemap__png,
 	        		creator : 'None'
 	        });	     

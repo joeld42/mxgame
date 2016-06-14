@@ -11,6 +11,8 @@ import flixel.math.FlxMath;
 import flixel.group.FlxGroup;
 import flixel.group.FlxSpriteGroup;
 
+import motion.Actuate;
+
 import flixel.util.FlxColor;
 import flixel.math.FlxPoint;
 import flixel.tile.FlxTilemap;
@@ -28,10 +30,16 @@ class PlayState extends FlxState
     public var info : GameInfo;
 
     public var goal : FlxSprite;
+
+    public var _frameGameOver : FlxSprite;
+    public var _btnRetry : FlxButton;
+    public var _btnBack : FlxButton;
 	
     private var _isWalking : Bool = false;
 
     private var _levelComplete : Bool = false;
+    private var _gameOverText : FlxText;
+    private var gameOver : Bool = false;
 
     private var energyBars : Array<Energy>;
 
@@ -73,11 +81,13 @@ class PlayState extends FlxState
 
 	public function playerHitDeadlyTile( a:FlxObject, b:FlxObject ) {
 		trace( 'Hit deadly tile... ${a} ${b}' );
+		DoGameOver();
 	}
 
 	override public function update(elapsed:Float):Void
 	{
-		if (!_levelComplete) {
+		if ((!_levelComplete) && (!gameOver)) {
+
 			movePlayer();
 			super.update(elapsed);
 			FlxG.collide(map, player);
@@ -150,6 +160,10 @@ class PlayState extends FlxState
 		// Cody updates
 		if (codyEnergyFood != null) {
 			codyEnergyFood.setEnergy( codyEnergyFood.energy - 0.05 );
+
+			if (codyEnergyFood.energy <= 0.0) {
+				DoGameOver();
+			}
 		}
 
 
@@ -237,6 +251,56 @@ class PlayState extends FlxState
 			codyEnergyFood = addEnergyBar( "Food", 0xffeaa52d );
 			codyEnergyFood.setEnergy( 10.0 );
 		}
+	}
+
+	private function DoGameOver()
+	{
+		gameOver = true;
+
+		player.acceleration.y = 0.0;
+
+		_frameGameOver = new FlxSprite( 0, 0 );
+		_frameGameOver.loadGraphic( AssetPaths.gameover_frame__png, false );
+		_frameGameOver.scrollFactor.set(0.0, 0.0 );
+		add(_frameGameOver);
+
+		_gameOverText = new FlxText( 127, 109 );
+		_gameOverText.setFormat( AssetPaths.grobold__ttf, 18, FlxColor.WHITE );
+		_gameOverText.setBorderStyle( FlxTextBorderStyle.OUTLINE, 0xff005784, 2 );
+		_gameOverText.text = info.options.gameOverText;
+		_gameOverText.scrollFactor.set(0.0, 0.0 );
+		add( _gameOverText );
+
+		_btnRetry = new FlxButton( 284, 231, clickReplay ); 
+		_btnRetry.loadGraphic(AssetPaths.btn_tryagain__png, false); 
+		_btnRetry.scrollFactor.set(0.0, 0.0 );
+		add(_btnRetry);
+
+		_btnBack = new FlxButton( 120, 210, clickBack ); 
+		_btnBack.loadGraphic(AssetPaths.btn_back__png, false); 
+		_btnBack.scrollFactor.set(0.0, 0.0 );
+		add(_btnBack);
+
+	}
+
+	private function clickReplay()
+	{
+		_levelComplete = true;
+
+		var playState = new PlayState(); 		
+		playState.info = info;
+		Actuate.reset();
+
+		FlxG.switchState( playState );
+	}
+
+	private function  clickBack()
+	{
+		_levelComplete = true;
+		
+		Actuate.reset();
+		FlxG.switchState( new CharSelectState() );
+
 	}
 }
 

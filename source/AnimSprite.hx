@@ -103,4 +103,16 @@ class AnimSprite extends flixel.FlxSprite {
 		}
     }
 
+    public override function destroy() {  
+    	trace("In AnimPlayer destroy..");  
+    	// _spriter.destroy();
+    	// _spriterGroup.destroy();
+    	// _spriterEngine.destroy();
+    	super.destroy();
+    }
+
+    public function teardown() {
+    	_spriterEngine.removeAll();
+    }
+
 }

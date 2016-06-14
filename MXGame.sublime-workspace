@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"_spr",
+				"_spriterEngine	var"
+			],
+			[
+				"_sprit",
+				"_spriterGroup	var"
+			],
+			[
+				"_sp",
+				"_spriterEngine	var"
+			],
+			[
 				"Pow",
 				"PowerupType	class"
 			],
@@ -251,7 +263,7 @@
 			"file": "source/PlayState.hx",
 			"settings":
 			{
-				"buffer_size": 5099,
+				"buffer_size": 7652,
 				"line_ending": "Windows"
 			}
 		},
@@ -259,16 +271,8 @@
 			"file": "source/Powerup.hx",
 			"settings":
 			{
-				"buffer_size": 405,
+				"buffer_size": 417,
 				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/joeld/Toolkits/haxelibrepo/flixel/4,0,1/flixel/FlxSprite.hx",
-			"settings":
-			{
-				"buffer_size": 40810,
-				"line_ending": "Windows"
 			}
 		},
 		{
@@ -283,7 +287,7 @@
 			"file": "source/CharSelectState.hx",
 			"settings":
 			{
-				"buffer_size": 4939,
+				"buffer_size": 7168,
 				"line_ending": "Unix"
 			}
 		},
@@ -291,7 +295,7 @@
 			"file": "source/GameInfo.hx",
 			"settings":
 			{
-				"buffer_size": 430,
+				"buffer_size": 504,
 				"line_ending": "Unix"
 			}
 		},
@@ -315,15 +319,23 @@
 			"file": "source/AnimSprite.hx",
 			"settings":
 			{
-				"buffer_size": 2665,
+				"buffer_size": 2937,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/joeld/Library/Developer/haxelib/SpriterHaxeEngine/2,0,0/spriter/engine/Spriter.hx",
+			"settings":
+			{
+				"buffer_size": 17351,
+				"line_ending": "Windows"
 			}
 		},
 		{
 			"file": "source/MapLoader.hx",
 			"settings":
 			{
-				"buffer_size": 3769,
+				"buffer_size": 5552,
 				"line_ending": "Unix"
 			}
 		},
@@ -349,14 +361,6 @@
 			{
 				"buffer_size": 4080,
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "assets/data/forest_level1_joel.tmx",
-			"settings":
-			{
-				"buffer_size": 11799,
-				"line_ending": "Unix"
 			}
 		}
 	],
@@ -402,17 +406,20 @@
 	[
 		"/Users/joeld/Google Drive/Kids_Make_Video_Games/MXGame",
 		"/Users/joeld/Google Drive/Kids_Make_Video_Games/MXGame/assets",
-		"/Users/joeld/Google Drive/Kids_Make_Video_Games/MXGame/assets/data",
 		"/Users/joeld/Google Drive/Kids_Make_Video_Games/MXGame/source",
 		"/Users/joeld/Toolkits/haxelibrepo/flixel/4,0,1",
 		"/Users/joeld/Toolkits/haxelibrepo/flixel/4,0,1/flixel",
 		"/Users/joeld/Toolkits/haxelibrepo/flixel/4,0,1/flixel/group",
 		"/Users/joeld/Toolkits/haxelibrepo/flixel/4,0,1/flixel/tile",
 		"/Users/joeld/Toolkits/haxelibrepo/flixel/4,0,1/flixel/tweens",
-		"/Users/joeld/Toolkits/haxelibrepo/flixel/4,0,1/flixel/tweens/motion"
+		"/Users/joeld/Toolkits/haxelibrepo/flixel/4,0,1/flixel/tweens/motion",
+		"/Users/joeld/Library/Developer/haxelib/SpriterHaxeEngine/2,0,0/spriter",
+		"/Users/joeld/Library/Developer/haxelib/SpriterHaxeEngine/2,0,0/spriter/definitions",
+		"/Users/joeld/Library/Developer/haxelib/SpriterHaxeEngine/2,0,0/spriter/engine"
 	],
 	"file_history":
 	[
+		"/Users/joeld/Google Drive/Kids_Make_Video_Games/MXGame/assets/data/forest_level1_joel.tmx",
 		"/Users/joeld/Work/gallium/GalliumApp/Podfile",
 		"/Users/joeld/Google Drive/Kids_Make_Video_Games/MXGame/.gitignore",
 		"/Users/joeld/Google Drive/Kids_Make_Video_Games/MXGame/source/ForestPlayState.hx",
@@ -518,6 +525,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"Group",
+			"engine",
 			"deadly",
 			"origin",
 			"scrollFactor",
@@ -643,9 +652,7 @@
 			"render",
 			"on_internal_render",
 			"SystemEventType",
-			"systemEventTyype",
-			"SYstemEventType",
-			"create("
+			"systemEventTyype"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -663,7 +670,7 @@
 	"groups":
 	[
 		{
-			"selected": 6,
+			"selected": 9,
 			"sheets":
 			[
 				{
@@ -692,7 +699,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
@@ -718,10 +725,10 @@
 							"syntax": "Packages/Haxe/Haxe.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 240.0,
+						"translation.y": 602.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -730,15 +737,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5099,
+						"buffer_size": 7652,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1736,
-								1742
+								7414,
+								7414
 							]
 						],
 						"settings":
@@ -748,7 +755,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 3956.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
@@ -760,44 +767,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 405,
+						"buffer_size": 417,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								81,
-								81
-							]
-						],
-						"settings":
-						{
-							"haxe-build-id": 0,
-							"syntax": "Packages/Haxe/Haxe.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "/Users/joeld/Toolkits/haxelibrepo/flixel/4,0,1/flixel/FlxSprite.hx",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 40810,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								6979,
-								6979
+								0,
+								0
 							]
 						],
 						"settings":
@@ -807,14 +785,14 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2834.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 10,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 4,
 					"file": "source/Energy.hx",
 					"semi_transient": false,
 					"settings":
@@ -841,24 +819,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 5,
 					"file": "source/CharSelectState.hx",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4939,
+						"buffer_size": 7168,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2118,
-								2118
+								0,
+								0
 							]
 						],
 						"settings":
@@ -870,24 +848,24 @@
 						"translation.y": 600.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 6,
 					"file": "source/GameInfo.hx",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 430,
+						"buffer_size": 504,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								323,
-								323
+								0,
+								0
 							]
 						],
 						"settings":
@@ -900,11 +878,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 7,
 					"file": "Project.xml",
 					"semi_transient": false,
 					"settings":
@@ -929,11 +907,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 14,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 8,
 					"file": "README.md",
 					"semi_transient": false,
 					"settings":
@@ -957,24 +935,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 13,
+					"stack_index": 14,
 					"type": "text"
 				},
 				{
-					"buffer": 10,
+					"buffer": 9,
 					"file": "source/AnimSprite.hx",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2665,
+						"buffer_size": 2937,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1944,
-								1944
+								2928,
+								2928
 							]
 						],
 						"settings":
@@ -983,10 +961,40 @@
 							"syntax": "Packages/Haxe/Haxe.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 527.0,
+						"translation.y": 804.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "/Users/joeld/Library/Developer/haxelib/SpriterHaxeEngine/2,0,0/spriter/engine/Spriter.hx",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 17351,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"haxe-build-id": 0,
+							"syntax": "Packages/Haxe/Haxe.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 260.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -995,15 +1003,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3769,
+						"buffer_size": 5552,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2394,
-								2394
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1016,7 +1024,7 @@
 						"translation.y": 333.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
@@ -1046,7 +1054,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
@@ -1074,7 +1082,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
+					"stack_index": 13,
 					"type": "text"
 				},
 				{
@@ -1104,37 +1112,7 @@
 						"translation.y": 104.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
-					"type": "text"
-				},
-				{
-					"buffer": 15,
-					"file": "assets/data/forest_level1_joel.tmx",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 11799,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/XML/XML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 15,
+					"stack_index": 12,
 					"type": "text"
 				}
 			]

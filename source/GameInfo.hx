@@ -8,6 +8,7 @@ typedef GameInfoOptions = {
 	var charDesc : String;
 	var creator : String;
 	var tileset : String;
+	var gameOverText : String;
 } // GameInfoOptions
 
 class GameInfo
