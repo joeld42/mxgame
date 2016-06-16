@@ -31,6 +31,11 @@
 	<classpath name="source" />
 	<assets path="assets" />
 
+	<assets path="assets/sounds">
+		<sound path="anja_cody_goodboy.wav" id="cody_goodboy" />
+		<sound path="anja_pickup.wav" id="anja_pickup" />
+	</assets>
+
 	<!-- _______________________________ Libraries ______________________________ -->
 
 	<haxelib name="flixel" />

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="60" height="10" tilewidth="100" tileheight="100" nextobjectid="22">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="60" height="10" tilewidth="100" tileheight="100" nextobjectid="27">
  <tileset firstgid="1" name="house_anya_tilemap" tilewidth="100" tileheight="100" tilecount="110" columns="10">
   <image source="../images/house_anja_tilemap.png" width="1000" height="1100"/>
  </tileset>
@@ -38,5 +38,8 @@
   <object id="17" gid="22" x="4804" y="899" width="100" height="100"/>
   <object id="19" name="player" x="19" y="769" width="167" height="98"/>
   <object id="20" name="goal" gid="42" x="5813" y="907" width="100" height="100"/>
+  <object id="24" name="anja" x="2048" y="846" width="918" height="52"/>
+  <object id="25" name="anja" x="3343" y="851" width="620" height="45"/>
+  <object id="26" name="anja" x="5203" y="343" width="196" height="54"/>
  </objectgroup>
 </map>

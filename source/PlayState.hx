@@ -34,6 +34,7 @@ class PlayState extends FlxState
     public var _frameGameOver : FlxSprite;
     public var _btnRetry : FlxButton;
     public var _btnBack : FlxButton;
+    public var _btnOkay : FlxButton;
 	
     private var _isWalking : Bool = false;
 
@@ -41,7 +42,11 @@ class PlayState extends FlxState
     private var _gameOverText : FlxText;
     private var gameOver : Bool = false;
 
+    public var _frozenTimeout : Float = 0.0;
+
     private var energyBars : Array<Energy>;
+
+    public var interlopers(default, null) : FlxSpriteGroup;
 
     public var items(default, null) : FlxSpriteGroup;
 
@@ -55,10 +60,15 @@ class PlayState extends FlxState
 
 	override public function create():Void
 	{
+
+		Reg.PS = this;
+
 		player = new AnimSprite();
 		player.makeGraphic( 100, 50, FlxColor.RED); 
 		player.x = 200;
 		player.acceleration.y = 2000;
+
+		interlopers = new FlxSpriteGroup();
 
 		// MapLoader.loadLevel( this, "forest_level1_joel");
 		// MapLoader.loadLevel( this, "robodog_level1");
@@ -74,6 +84,7 @@ class PlayState extends FlxState
 		FlxG.camera.follow( player, FlxCameraFollowStyle.PLATFORMER );
 		FlxG.camera.setScrollBoundsRect( 0, 0, map.width, map.height, true );
 
+
 		createHudElements();
 
 		super.create();
@@ -88,7 +99,7 @@ class PlayState extends FlxState
 	{
 		if ((!_levelComplete) && (!gameOver)) {
 
-			movePlayer();
+			movePlayer( elapsed );
 			super.update(elapsed);
 			FlxG.collide(map, player);
 
@@ -99,6 +110,8 @@ class PlayState extends FlxState
 				FlxG.overlap( goal, player, collideGoal );
 			}
 
+			FlxG.overlap( interlopers, player, collideInterloper );
+
 			player.updateSpriter(elapsed);
 		} else {
 			super.update(elapsed);
@@ -106,9 +119,14 @@ class PlayState extends FlxState
 
 	}
 
-	private function movePlayer() : Void
+	private function movePlayer( elapsed : Float ) : Void
 	{
 		player.velocity.x = 0;
+
+		if (_frozenTimeout > 0.0) {
+			_frozenTimeout -= elapsed;
+			return;			
+		}
 
 		if (FlxG.keys.pressed.LEFT) {
 			player.velocity.x -= 400;			
@@ -130,6 +148,11 @@ class PlayState extends FlxState
 
 		if (FlxG.keys.justPressed.C && player.isTouching(FlxObject.FLOOR)) {
 			player.velocity.y = -1500.0;
+		}
+
+		// Fall off bottom of screen?
+		if (player.y > map.height - player.height) {
+			DoGameOver();
 		}
 
 		// Robodog updates
@@ -169,12 +192,25 @@ class PlayState extends FlxState
 
 	}
 
+	public function collideInterloper( interloper : Interloper, player : FlxSprite) 
+	{		
+		if (info.options.charIdent == "cody") {
+
+			if ((_frozenTimeout <= 0.0) && (interloper._goodboyTimeout <= 0.0)) {
+				_frozenTimeout = 2.0;
+				interloper._goodboyTimeout = 5.0;
+				FlxG.sound.play( "cody_goodboy");
+			}
+		}
+	}
+
 	public function collideGoal( item : FlxSprite, player : FlxSprite) 
 	{
 		_levelComplete = true;
 
 		trace("GOAL REACHED, go to next level...");
-		FlxG.switchState( new CharSelectState() );
+		// FlxG.switchState( new CharSelectState() );
+		DoLevelComplete();
 	}
 
 	public function collideItems( item : Powerup, player : AnimSprite )
@@ -196,6 +232,7 @@ class PlayState extends FlxState
 			rdogEnergyPurple.setEnergy( rdogEnergyPurple.energy + item.amount_ );
 			item.kill();						
 		} else if (item.type_ == CodyFood) {
+			FlxG.sound.play( "anja_pickup");
 			codyEnergyFood.setEnergy( codyEnergyFood.energy + item.amount_ );
 			item.kill();						
 		}
@@ -253,10 +290,36 @@ class PlayState extends FlxState
 		}
 	}
 
+	private function DoLevelComplete()
+	{
+		gameOver = true;
+
+		player.acceleration.x = 0.0;
+		player.acceleration.y = 0.0;
+
+		_frameGameOver = new FlxSprite( 0, 0 );
+		_frameGameOver.loadGraphic( AssetPaths.gameover_frame__png, false );
+		_frameGameOver.scrollFactor.set(0.0, 0.0 );
+		add(_frameGameOver);
+
+		_gameOverText = new FlxText( 127, 109 );
+		_gameOverText.setFormat( AssetPaths.grobold__ttf, 18, FlxColor.WHITE );
+		_gameOverText.setBorderStyle( FlxTextBorderStyle.OUTLINE, 0xff005784, 2 );
+		_gameOverText.text = "Level Complete!";
+		_gameOverText.scrollFactor.set(0.0, 0.0 );
+		add( _gameOverText );
+
+		_btnOkay = new FlxButton( 284, 231, clickBack ); 
+		_btnOkay.loadGraphic(AssetPaths.btn_okay__png, false); 
+		_btnOkay.scrollFactor.set(0.0, 0.0 );
+		add(_btnOkay);
+	}
+
 	private function DoGameOver()
 	{
 		gameOver = true;
 
+		player.acceleration.x = 0.0;
 		player.acceleration.y = 0.0;
 
 		_frameGameOver = new FlxSprite( 0, 0 );
@@ -282,6 +345,7 @@ class PlayState extends FlxState
 		add(_btnBack);
 
 	}
+
 
 	private function clickReplay()
 	{

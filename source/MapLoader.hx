@@ -121,6 +121,20 @@ class MapLoader
 				goal.y -= goal.height;
 				state.add( goal );
 
+			} else if (object.name=="anja") {
+				trace("Adding an Anja");
+				var interloper = new Interloper( object.x, object.y - 80 );
+				interloper.patrolMin = object.x;
+				interloper.patrolMax = object.x + object.width;
+				interloper.loadGraphic('assets/images/interloper_${object.name}.png', true, 89, 166 );
+				interloper.animation.add("walk", [0, 1], 4 );
+				interloper.animation.play("walk");
+				interloper.active = true;
+				interloper.velocity.x = -2.0;				
+
+				state.add( interloper );
+				state.interlopers.add( interloper );
+
 			// Tile objects	
 			} 
 
