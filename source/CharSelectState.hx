@@ -177,7 +177,12 @@ class CharSelectState extends FlxState
 		_charTitle.setBorderStyle( FlxTextBorderStyle.OUTLINE, 0xff005784, 2 );
 		add(_charTitle);
 
-		_charDesc = new FlxText( 355, 360 );
+		_charCreator = new FlxText( 355, 360 );
+		_charCreator.setFormat( AssetPaths.grobold__ttf, 12, FlxColor.WHITE );
+		_charCreator.setBorderStyle( FlxTextBorderStyle.OUTLINE, 0xff005784, 1 );
+		add( _charCreator );
+
+		_charDesc = new FlxText( 355, 380 );
 		_charDesc.setFormat( AssetPaths.grobold__ttf, 18, FlxColor.WHITE );
 		_charDesc.setBorderStyle( FlxTextBorderStyle.OUTLINE, 0xff005784, 2 );
 		add( _charDesc );
@@ -222,6 +227,7 @@ class CharSelectState extends FlxState
 		gameInfo._charPortrait.alpha = 1.0;
 		_charTitle.text = gameInfo.options.charName;
 		_charDesc.text = gameInfo.options.charDesc;
+		_charCreator.text = 'Created By: ${gameInfo.options.creator}';
 	}
 }
 
