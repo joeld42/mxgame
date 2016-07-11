@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="r7">
+    <folder id="0">
+        <file id="0" name="lavapool_body.png" width="54" height="93" pivot_x="0" pivot_y="1"/>
+        <file id="1" name="lavapool_head.png" width="62" height="62" pivot_x="0" pivot_y="1"/>
+        <file id="2" name="lavapool_arm_l.png" width="31" height="50" pivot_x="0" pivot_y="1"/>
+        <file id="3" name="lavapool_arm_r.png" width="31" height="40" pivot_x="0" pivot_y="1"/>
+        <file id="4" name="lavapool_hips.png" width="43" height="22" pivot_x="0" pivot_y="1"/>
+        <file id="5" name="lavapool_leg_l.png" width="18" height="55" pivot_x="0" pivot_y="1"/>
+        <file id="6" name="lavapool_leg_r.png" width="16" height="53" pivot_x="0" pivot_y="1"/>
+        <file id="7" name="lavapool_head_side.png" width="47" height="59" pivot_x="0" pivot_y="1"/>
+    </folder>
+    <entity id="0" name="player">
+        <obj_info name="bone_000" type="bone" w="74.4103" h="10"/>
+        <obj_info name="bone_001" type="bone" w="14.0097" h="10"/>
+        <obj_info name="bone_002" type="bone" w="50.5749" h="10"/>
+        <obj_info name="bone_003" type="bone" w="53.4051" h="10"/>
+        <obj_info name="bone_004" type="bone" w="57.0048" h="10"/>
+        <obj_info name="bone_005" type="bone" w="56.1593" h="10"/>
+        <obj_info name="bone_006" type="bone" w="47.7357" h="10"/>
+        <animation id="0" name="idle" length="1000" interval="100">
+            <mainline>
+                <key id="0">
+                    <bone_ref id="0" timeline="7" key="0"/>
+                    <bone_ref id="1" parent="0" timeline="8" key="0"/>
+                    <bone_ref id="2" parent="1" timeline="9" key="0"/>
+                    <bone_ref id="3" parent="1" timeline="10" key="0"/>
+                    <bone_ref id="4" parent="0" timeline="11" key="0"/>
+                    <bone_ref id="5" parent="0" timeline="12" key="0"/>
+                    <bone_ref id="6" parent="0" timeline="13" key="0"/>
+                    <object_ref id="0" parent="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" parent="4" timeline="1" key="0" z_index="1"/>
+                    <object_ref id="2" parent="5" timeline="2" key="0" z_index="2"/>
+                    <object_ref id="3" parent="6" timeline="3" key="0" z_index="3"/>
+                    <object_ref id="4" parent="1" timeline="4" key="0" z_index="4"/>
+                    <object_ref id="5" parent="2" timeline="5" key="0" z_index="5"/>
+                    <object_ref id="6" parent="3" timeline="6" key="0" z_index="6"/>
+                </key>
+                <key id="1" time="500">
+                    <bone_ref id="0" timeline="7" key="1"/>
+                    <bone_ref id="1" parent="0" timeline="8" key="1"/>
+                    <bone_ref id="2" parent="1" timeline="9" key="1"/>
+                    <bone_ref id="3" parent="1" timeline="10" key="1"/>
+                    <bone_ref id="4" parent="0" timeline="11" key="1"/>
+                    <bone_ref id="5" parent="0" timeline="12" key="1"/>
+                    <bone_ref id="6" parent="0" timeline="13" key="1"/>
+                    <object_ref id="0" parent="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" parent="4" timeline="1" key="0" z_index="1"/>
+                    <object_ref id="2" parent="5" timeline="2" key="0" z_index="2"/>
+                    <object_ref id="3" parent="6" timeline="3" key="0" z_index="3"/>
+                    <object_ref id="4" parent="1" timeline="4" key="0" z_index="4"/>
+                    <object_ref id="5" parent="2" timeline="5" key="0" z_index="5"/>
+                    <object_ref id="6" parent="3" timeline="6" key="0" z_index="6"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="lavapool_body">
+                <key id="0" spin="0">
+                    <object folder="0" file="0" x="81.286888" y="25.687909" angle="268.88399"/>
+                </key>
+            </timeline>
+            <timeline id="1" name="lavapool_head">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="57.354926" y="29.462732" angle="270" scale_x="1"/>
+                </key>
+            </timeline>
+            <timeline id="2" name="lavapool_arm_l">
+                <key id="0" spin="0">
+                    <object folder="0" file="2" x="19.618952" y="-28.869906" angle="125.193907"/>
+                </key>
+            </timeline>
+            <timeline id="3" name="lavapool_arm_r">
+                <key id="0" spin="0">
+                    <object folder="0" file="3" x="-3.904946" y="-0.857803" angle="54.057888" scale_x="1"/>
+                </key>
+            </timeline>
+            <timeline id="4" name="lavapool_hips">
+                <key id="0" spin="0">
+                    <object folder="0" file="4" x="-3.604608" y="-20.072757" angle="90"/>
+                </key>
+            </timeline>
+            <timeline id="5" name="lavapool_leg_l">
+                <key id="0" spin="0">
+                    <object folder="0" file="5" x="-0.708652" y="-15.716118" angle="96.581945" scale_x="1"/>
+                </key>
+            </timeline>
+            <timeline id="6" name="lavapool_leg_r">
+                <key id="0" spin="0">
+                    <object folder="0" file="6" x="0.3649" y="-5.294449" angle="84.289407" scale_x="1"/>
+                </key>
+            </timeline>
+            <timeline id="7" obj="0" name="bone_000" object_type="bone">
+                <key id="0">
+                    <bone x="-5.797101" y="62.801932" angle="80.433314"/>
+                </key>
+                <key id="1" time="500" spin="-1">
+                    <bone x="11.111111" y="62.318841" angle="103.082991"/>
+                </key>
+            </timeline>
+            <timeline id="8" obj="1" name="bone_001" object_type="bone">
+                <key id="0" spin="-1">
+                    <bone x="-5.313002" y="0.1035" angle="198.174036"/>
+                </key>
+                <key id="1" time="500">
+                    <bone x="-5.313002" y="0.1035" angle="166.193536"/>
+                </key>
+            </timeline>
+            <timeline id="9" obj="2" name="bone_002" object_type="bone">
+                <key id="0">
+                    <bone x="8.21256" y="-13.043478" angle="333.21731" scale_x="1"/>
+                </key>
+                <key id="1" time="500" spin="-1">
+                    <bone x="8.21256" y="-13.043478" angle="354.302632" scale_x="1"/>
+                </key>
+            </timeline>
+            <timeline id="10" obj="3" name="bone_003" object_type="bone">
+                <key id="0">
+                    <bone x="7.246377" y="18.357488" angle="350.141109" scale_x="1"/>
+                </key>
+                <key id="1" time="500" spin="-1">
+                    <bone x="7.246377" y="18.357488" angle="21.28065" scale_x="1"/>
+                </key>
+            </timeline>
+            <timeline id="11" obj="4" name="bone_004" object_type="bone">
+                <key id="0" spin="-1">
+                    <bone x="77.753615" y="-1.997864" angle="11.27175" scale_x="1"/>
+                </key>
+                <key id="1" time="500">
+                    <bone x="77.753615" y="-1.997864" angle="343.612664" scale_x="1"/>
+                </key>
+            </timeline>
+            <timeline id="12" obj="5" name="bone_005" object_type="bone">
+                <key id="0" spin="-1">
+                    <bone x="67.058612" y="19.470551" angle="143.690082"/>
+                </key>
+                <key id="1" time="500">
+                    <bone x="67.058612" y="19.470551" angle="135.700594"/>
+                </key>
+            </timeline>
+            <timeline id="13" obj="6" name="bone_006" object_type="bone">
+                <key id="0">
+                    <bone x="63.285565" y="-25.392008" angle="218.568047" scale_x="1"/>
+                </key>
+                <key id="1" time="500" spin="-1">
+                    <bone x="63.285565" y="-25.392008" angle="227.423571" scale_x="1"/>
+                </key>
+            </timeline>
+        </animation>
+        <animation id="1" name="jump_loop" length="1000" interval="100">
+            <mainline>
+                <key id="0">
+                    <bone_ref id="0" timeline="0" key="0"/>
+                    <bone_ref id="1" parent="0" timeline="1" key="0"/>
+                    <bone_ref id="2" parent="1" timeline="2" key="0"/>
+                    <bone_ref id="3" parent="1" timeline="3" key="0"/>
+                    <bone_ref id="4" parent="0" timeline="4" key="0"/>
+                    <bone_ref id="5" parent="0" timeline="5" key="0"/>
+                    <bone_ref id="6" parent="0" timeline="6" key="0"/>
+                    <object_ref id="0" parent="0" timeline="7" key="0" z_index="0"/>
+                    <object_ref id="1" parent="4" timeline="8" key="0" z_index="1"/>
+                    <object_ref id="2" parent="5" timeline="9" key="0" z_index="2"/>
+                    <object_ref id="3" parent="6" timeline="10" key="0" z_index="3"/>
+                    <object_ref id="4" parent="1" timeline="11" key="0" z_index="4"/>
+                    <object_ref id="5" parent="2" timeline="12" key="0" z_index="5"/>
+                    <object_ref id="6" parent="3" timeline="13" key="0" z_index="6"/>
+                </key>
+                <key id="1" time="500">
+                    <bone_ref id="0" timeline="0" key="1"/>
+                    <bone_ref id="1" parent="0" timeline="1" key="0"/>
+                    <bone_ref id="2" parent="1" timeline="2" key="1"/>
+                    <bone_ref id="3" parent="1" timeline="3" key="1"/>
+                    <bone_ref id="4" parent="0" timeline="4" key="1"/>
+                    <bone_ref id="5" parent="0" timeline="5" key="1"/>
+                    <bone_ref id="6" parent="0" timeline="6" key="1"/>
+                    <object_ref id="0" parent="0" timeline="7" key="0" z_index="0"/>
+                    <object_ref id="1" parent="4" timeline="8" key="0" z_index="1"/>
+                    <object_ref id="2" parent="5" timeline="9" key="0" z_index="2"/>
+                    <object_ref id="3" parent="6" timeline="10" key="0" z_index="3"/>
+                    <object_ref id="4" parent="1" timeline="11" key="0" z_index="4"/>
+                    <object_ref id="5" parent="2" timeline="12" key="0" z_index="5"/>
+                    <object_ref id="6" parent="3" timeline="13" key="0" z_index="6"/>
+                </key>
+            </mainline>
+            <timeline id="0" obj="0" name="bone_000" object_type="bone">
+                <key id="0" spin="-1">
+                    <bone x="0.483092" y="66.183575" angle="104.257035"/>
+                </key>
+                <key id="1" time="500">
+                    <bone x="0.483092" y="66.183575" angle="96.082337"/>
+                </key>
+            </timeline>
+            <timeline id="1" obj="1" name="bone_001" object_type="bone">
+                <key id="0" spin="0">
+                    <bone x="-5.313002" y="0.1035" angle="196.489017"/>
+                </key>
+            </timeline>
+            <timeline id="2" obj="2" name="bone_002" object_type="bone">
+                <key id="0" spin="-1">
+                    <bone x="8.21256" y="-13.043478" angle="288.892546" scale_x="1"/>
+                </key>
+                <key id="1" time="500">
+                    <bone x="8.21256" y="-13.043478" angle="275.033752" scale_x="1"/>
+                </key>
+            </timeline>
+            <timeline id="3" obj="3" name="bone_003" object_type="bone">
+                <key id="0">
+                    <bone x="7.246377" y="18.357488" angle="17.617246" scale_x="1"/>
+                </key>
+                <key id="1" time="500" spin="-1">
+                    <bone x="7.246377" y="18.357488" angle="34.297428" scale_x="1"/>
+                </key>
+            </timeline>
+            <timeline id="4" obj="4" name="bone_004" object_type="bone">
+                <key id="0">
+                    <bone x="77.753615" y="-1.997864" angle="347.219234" scale_x="1"/>
+                </key>
+                <key id="1" time="500" spin="-1">
+                    <bone x="77.753615" y="-1.997864" angle="2.735513" scale_x="1"/>
+                </key>
+            </timeline>
+            <timeline id="5" obj="5" name="bone_005" object_type="bone">
+                <key id="0" spin="-1">
+                    <bone x="67.058612" y="19.470551" angle="122.877282"/>
+                </key>
+                <key id="1" time="500">
+                    <bone x="67.058612" y="19.470551" angle="106.857768"/>
+                </key>
+            </timeline>
+            <timeline id="6" obj="6" name="bone_006" object_type="bone">
+                <key id="0" spin="-1">
+                    <bone x="63.285565" y="-25.392008" angle="328.124248" scale_x="1"/>
+                </key>
+                <key id="1" time="500">
+                    <bone x="63.285565" y="-25.392008" angle="298.689403" scale_x="1"/>
+                </key>
+            </timeline>
+            <timeline id="7" name="lavapool_body">
+                <key id="0" spin="0">
+                    <object folder="0" file="0" x="81.286888" y="25.687909" angle="268.88399"/>
+                </key>
+            </timeline>
+            <timeline id="8" name="lavapool_head">
+                <key id="0" spin="0">
+                    <object folder="0" file="7" x="57.354926" y="29.462732" angle="270" scale_x="1"/>
+                </key>
+            </timeline>
+            <timeline id="9" name="lavapool_arm_l">
+                <key id="0" spin="0">
+                    <object folder="0" file="2" x="19.618952" y="-28.869906" angle="125.193907"/>
+                </key>
+            </timeline>
+            <timeline id="10" name="lavapool_arm_r">
+                <key id="0" spin="0">
+                    <object folder="0" file="3" x="-3.904946" y="-0.857803" angle="54.057888" scale_x="1"/>
+                </key>
+            </timeline>
+            <timeline id="11" name="lavapool_hips">
+                <key id="0" spin="0">
+                    <object folder="0" file="4" x="-3.604608" y="-20.072757" angle="90"/>
+                </key>
+            </timeline>
+            <timeline id="12" name="lavapool_leg_l">
+                <key id="0" spin="0">
+                    <object folder="0" file="5" x="-0.708652" y="-15.716118" angle="96.581945" scale_x="1"/>
+                </key>
+            </timeline>
+            <timeline id="13" name="lavapool_leg_r">
+                <key id="0" spin="0">
+                    <object folder="0" file="6" x="0.3649" y="-5.294449" angle="84.289407" scale_x="1"/>
+                </key>
+            </timeline>
+        </animation>
+        <animation id="2" name="walk" length="1000" interval="100">
+            <mainline>
+                <key id="0">
+                    <bone_ref id="0" timeline="0" key="0"/>
+                    <bone_ref id="1" parent="0" timeline="1" key="0"/>
+                    <bone_ref id="2" parent="1" timeline="2" key="0"/>
+                    <bone_ref id="3" parent="1" timeline="3" key="0"/>
+                    <bone_ref id="4" parent="0" timeline="4" key="0"/>
+                    <bone_ref id="5" parent="0" timeline="5" key="0"/>
+                    <bone_ref id="6" parent="0" timeline="6" key="0"/>
+                    <object_ref id="0" parent="0" timeline="7" key="0" z_index="0"/>
+                    <object_ref id="1" parent="4" timeline="8" key="0" z_index="1"/>
+                    <object_ref id="2" parent="5" timeline="9" key="0" z_index="2"/>
+                    <object_ref id="3" parent="6" timeline="10" key="0" z_index="3"/>
+                    <object_ref id="4" parent="1" timeline="11" key="0" z_index="4"/>
+                    <object_ref id="5" parent="2" timeline="12" key="0" z_index="5"/>
+                    <object_ref id="6" parent="3" timeline="13" key="0" z_index="6"/>
+                </key>
+                <key id="1" time="500">
+                    <bone_ref id="0" timeline="0" key="1"/>
+                    <bone_ref id="1" parent="0" timeline="1" key="1"/>
+                    <bone_ref id="2" parent="1" timeline="2" key="1"/>
+                    <bone_ref id="3" parent="1" timeline="3" key="1"/>
+                    <bone_ref id="4" parent="0" timeline="4" key="1"/>
+                    <bone_ref id="5" parent="0" timeline="5" key="1"/>
+                    <bone_ref id="6" parent="0" timeline="6" key="1"/>
+                    <object_ref id="0" parent="0" timeline="7" key="0" z_index="0"/>
+                    <object_ref id="1" parent="4" timeline="8" key="0" z_index="1"/>
+                    <object_ref id="2" parent="5" timeline="9" key="0" z_index="2"/>
+                    <object_ref id="3" parent="6" timeline="10" key="0" z_index="3"/>
+                    <object_ref id="4" parent="1" timeline="11" key="0" z_index="4"/>
+                    <object_ref id="5" parent="2" timeline="12" key="0" z_index="5"/>
+                    <object_ref id="6" parent="3" timeline="13" key="0" z_index="6"/>
+                </key>
+            </mainline>
+            <timeline id="0" obj="0" name="bone_000" object_type="bone">
+                <key id="0">
+                    <bone x="0.483092" y="66.183575" angle="85.877702"/>
+                </key>
+                <key id="1" time="500" spin="-1">
+                    <bone x="0.483092" y="66.183575" angle="103.24052"/>
+                </key>
+            </timeline>
+            <timeline id="1" obj="1" name="bone_001" object_type="bone">
+                <key id="0" spin="-1">
+                    <bone x="-5.313002" y="0.1035" angle="196.373528"/>
+                </key>
+                <key id="1" time="500">
+                    <bone x="-5.313002" y="0.1035" angle="149.758386"/>
+                </key>
+            </timeline>
+            <timeline id="2" obj="2" name="bone_002" object_type="bone">
+                <key id="0">
+                    <bone x="6.763285" y="-6.280193" angle="341.14209" scale_x="1"/>
+                </key>
+                <key id="1" time="500" spin="-1">
+                    <bone x="8.843826" y="-14.737089" angle="50.015077" scale_x="1"/>
+                </key>
+            </timeline>
+            <timeline id="3" obj="3" name="bone_003" object_type="bone">
+                <key id="0" spin="-1">
+                    <bone x="3.864734" y="8.21256" angle="0.901651" scale_x="1"/>
+                </key>
+                <key id="1" time="500">
+                    <bone x="2.772952" y="13.435595" angle="340.246171" scale_x="1"/>
+                </key>
+            </timeline>
+            <timeline id="4" obj="4" name="bone_004" object_type="bone">
+                <key id="0" spin="-1">
+                    <bone x="73.278128" y="-0.383043" angle="6.331855" scale_x="1"/>
+                </key>
+                <key id="1" time="500">
+                    <bone x="73.278128" y="-0.383043" angle="331.365867" scale_x="1"/>
+                </key>
+            </timeline>
+            <timeline id="5" obj="5" name="bone_005" object_type="bone">
+                <key id="0" spin="-1">
+                    <bone x="70.53684" y="-0.407727" angle="125.671836"/>
+                </key>
+                <key id="1" time="500">
+                    <bone x="62.579104" y="14.058079" angle="70.103167"/>
+                </key>
+            </timeline>
+            <timeline id="6" obj="6" name="bone_006" object_type="bone">
+                <key id="0">
+                    <bone x="73.78773" y="-16.319529" angle="247.367727" scale_x="1"/>
+                </key>
+                <key id="1" time="500" spin="-1">
+                    <bone x="64.833666" y="-17.716027" angle="248.244317" scale_x="1"/>
+                </key>
+            </timeline>
+            <timeline id="7" name="lavapool_body">
+                <key id="0" spin="0">
+                    <object folder="0" file="0" x="81.286888" y="25.687909" angle="268.88399"/>
+                </key>
+            </timeline>
+            <timeline id="8" name="lavapool_head">
+                <key id="0" spin="0">
+                    <object folder="0" file="7" x="57.354926" y="29.462732" angle="270" scale_x="1"/>
+                </key>
+            </timeline>
+            <timeline id="9" name="lavapool_arm_l">
+                <key id="0" spin="0">
+                    <object folder="0" file="2" x="19.618952" y="-28.869906" angle="125.193907"/>
+                </key>
+            </timeline>
+            <timeline id="10" name="lavapool_arm_r">
+                <key id="0" spin="0">
+                    <object folder="0" file="3" x="-3.904946" y="-0.857803" angle="54.057888" scale_x="1"/>
+                </key>
+            </timeline>
+            <timeline id="11" name="lavapool_hips">
+                <key id="0" spin="0">
+                    <object folder="0" file="4" x="-3.604608" y="-20.072757" angle="90"/>
+                </key>
+            </timeline>
+            <timeline id="12" name="lavapool_leg_l">
+                <key id="0" spin="0">
+                    <object folder="0" file="5" x="-0.708652" y="-15.716118" angle="96.581945" scale_x="1"/>
+                </key>
+            </timeline>
+            <timeline id="13" name="lavapool_leg_r">
+                <key id="0" spin="0">
+                    <object folder="0" file="6" x="0.3649" y="-5.294449" angle="84.289407" scale_x="1"/>
+                </key>
+            </timeline>
+        </animation>
+    </entity>
+</spriter_data>

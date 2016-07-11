@@ -82,7 +82,9 @@ class PlayState extends FlxState
 		// player.attachSpriter( this, "assets/images/tiger/", "assets/images/tiger/tiger.scml" );
 		// player.attachSpriter( this, "assets/images/magickitty/", "assets/images/magickitty/magickitty.scml" );
 		// player.attachSpriter( this, "assets/images/underworld/", "assets/images/underworld/ninjakitty.scml" );
-		player.attachSpriter( this, "assets/images/cody/", "assets/images/cody/cody.scml" );
+		//player.attachSpriter( this, "assets/images/cody/", "assets/images/cody/cody.scml" );
+		// player.attachSpriter( this, "assets/images/leopard/", "assets/images/leopard/leopard.scml" );
+		player.attachSpriter( this, "assets/images/lavapool/", "assets/images/lavapool/lavapool.scml" );
 
 		// FlxG.cameras.bgColor = new FlxColor( 0xd2e9fc );
 		FlxG.camera.follow( player, FlxCameraFollowStyle.PLATFORMER );
